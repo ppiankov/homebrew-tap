@@ -4,6 +4,7 @@
 class Trustwatch < Formula
   desc "Kubernetes trust surface monitoring — discovers expiring certificates across webhooks, mesh, and more"
   homepage "https://github.com/ppiankov/trustwatch"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
