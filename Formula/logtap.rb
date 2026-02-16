@@ -4,28 +4,28 @@
 class Logtap < Formula
   desc "Ephemeral log mirror for load testing"
   homepage "https://github.com/ppiankov/logtap"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ppiankov/logtap/releases/download/v0.3.1/logtap_0.3.1_darwin_arm64.tar.gz"
-      sha256 "30ca100bb1a619d869e46f68b447162d7a99a9ffcd618898c62f7b424394c029"
+      url "https://github.com/ppiankov/logtap/releases/download/v0.4.0/logtap_0.4.0_darwin_arm64.tar.gz"
+      sha256 "64c2d859ca30be403c39c862f3eab202675815e27345f907e499d4195545a82d"
     end
     on_intel do
-      url "https://github.com/ppiankov/logtap/releases/download/v0.3.1/logtap_0.3.1_darwin_amd64.tar.gz"
-      sha256 "66103bc1fe88b598a9626717eb718375190e0fdff15c389901934ce43a16edbf"
+      url "https://github.com/ppiankov/logtap/releases/download/v0.4.0/logtap_0.4.0_darwin_amd64.tar.gz"
+      sha256 "e383d75be8471c27288135e809af431ff81d0d4d6d5dc8d2bb778470cd9ecac3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ppiankov/logtap/releases/download/v0.3.1/logtap_0.3.1_linux_arm64.tar.gz"
-      sha256 "9eacf56660dbbe553cf49c3ea0a377b9beb72794f91ad2feb8369962b6837fb5"
+      url "https://github.com/ppiankov/logtap/releases/download/v0.4.0/logtap_0.4.0_linux_arm64.tar.gz"
+      sha256 "232f66c034a33f6b52ed496ea1ec10fc7908f17a3a6e639d6170b46ebfe4e07d"
     end
     on_intel do
-      url "https://github.com/ppiankov/logtap/releases/download/v0.3.1/logtap_0.3.1_linux_amd64.tar.gz"
-      sha256 "71460e7c6ca597f4ad3931e59bd3670e38aa34463f9da071b3e8a355c632d93d"
+      url "https://github.com/ppiankov/logtap/releases/download/v0.4.0/logtap_0.4.0_linux_amd64.tar.gz"
+      sha256 "cab9352469b16b445b944079d16e0fb56208eb224b2d2b8439d900ed81ed2e4c"
     end
   end
 
