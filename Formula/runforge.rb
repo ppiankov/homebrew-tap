@@ -11,7 +11,7 @@ class Runforge < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ppiankov/runforge/releases/download/v0.2.0/runforge_0.2.0_darwin_amd64.tar.gz"
-      sha256 "6c573cc813419ed16edeb28accdfb2e708ee9e85d12cd425a1560aa1e1f1cc47"
+      sha256 "f377fbb3df5a54ed53a0218745d16a5c4b7b5537eae46796548499cdaf85cdf2"
 
       def install
         bin.install "runforge"
@@ -19,7 +19,7 @@ class Runforge < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ppiankov/runforge/releases/download/v0.2.0/runforge_0.2.0_darwin_arm64.tar.gz"
-      sha256 "33c787f2c49c74cd4dfdbe493e2f8eb63b76563c45accd44392b89fe50980958"
+      sha256 "877359d86a7af7e90b6a5ceb4e56266cb1b32761fb96d2a71228d25f73bc724e"
 
       def install
         bin.install "runforge"
@@ -30,14 +30,14 @@ class Runforge < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/runforge/releases/download/v0.2.0/runforge_0.2.0_linux_amd64.tar.gz"
-      sha256 "9d24c308551e9cdda7549d53ba74c0d1f48a49b08ee3828934f239e473a3d96e"
+      sha256 "cf73ddd798fc9c5061d069874bb76bc32eeb43bc1d00bdffe1b4478408562e37"
       def install
         bin.install "runforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/runforge/releases/download/v0.2.0/runforge_0.2.0_linux_arm64.tar.gz"
-      sha256 "22ba9314028b494889e99d852169c59bc9600babbedc8bc7befe65e7e8b2de9f"
+      sha256 "4679cf54ac0fc8101f9b98887a311937c53323ff50030c0f20720e23afe97f75"
       def install
         bin.install "runforge"
       end
