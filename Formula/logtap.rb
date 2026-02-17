@@ -10,22 +10,22 @@ class Logtap < Formula
   on_macos do
     on_arm do
       url "https://github.com/ppiankov/logtap/releases/download/v1.0.0/logtap_1.0.0_darwin_arm64.tar.gz"
-      sha256 "164b4927d2580d2ac54e5eca2b04faed8ab039a4cf338302db7ed676ab3c42de"
+      sha256 "5c0f14dfa85fc6445133d7b1cccc6cc2591f3df71ea560b8a7afc97f9e6efb9e"
     end
     on_intel do
       url "https://github.com/ppiankov/logtap/releases/download/v1.0.0/logtap_1.0.0_darwin_amd64.tar.gz"
-      sha256 "32a8a36552974858f263726a143b87d0eae8a53b6db78b6093c50dc569c056a8"
+      sha256 "9216451058aa62f05c0378e561cbd3e86b79ce632379b1b34d46b8590aa67ee1"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ppiankov/logtap/releases/download/v1.0.0/logtap_1.0.0_linux_arm64.tar.gz"
-      sha256 "6881235de679d14f6701d5544fcb0bab5cc093c3f00b66df16e7ddce97e61e86"
+      sha256 "6b62fd2f9df8255f62250e748f7fbf41801e6d03e0765358873fa26cc7525ab5"
     end
     on_intel do
       url "https://github.com/ppiankov/logtap/releases/download/v1.0.0/logtap_1.0.0_linux_amd64.tar.gz"
-      sha256 "283ee03de445c550aa126bbeef6c6427ece8c24da65b93cf1102729df111cac8"
+      sha256 "a69198421dd1713726704b223c58eb92afab0628095967abff52861194f65667"
     end
   end
 
