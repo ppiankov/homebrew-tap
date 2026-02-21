@@ -5,6 +5,7 @@ Homebrew formulae for ppiankov tools.
 ## Install
 
 ```bash
+brew install ppiankov/tap/kubenow
 brew install ppiankov/tap/trustwatch
 brew install ppiankov/tap/mongospectre
 brew install ppiankov/tap/pgspectre
@@ -15,6 +16,7 @@ brew install ppiankov/tap/logtap
 
 | Formula | Description |
 |---------|-------------|
+| [kubenow](https://github.com/ppiankov/kubenow) | Kubernetes resource analysis and cost optimization |
 | [trustwatch](https://github.com/ppiankov/trustwatch) | Kubernetes trust surface monitoring |
 | [mongospectre](https://github.com/ppiankov/mongospectre) | MongoDB collection and index auditor |
 | [pgspectre](https://github.com/ppiankov/pgspectre) | PostgreSQL schema and usage auditor |
