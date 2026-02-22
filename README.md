@@ -26,3 +26,4 @@ brew install ppiankov/tap/<formula>
 | [kafkaspectre](https://github.com/ppiankov/kafkaspectre) | Kafka cluster auditor — identifies unused, orphaned, and misconfigured topics |
 | [pgspectre](https://github.com/ppiankov/pgspectre) | PostgreSQL schema and usage auditor |
 | [logtap](https://github.com/ppiankov/logtap) | Ephemeral log mirror for Kubernetes load testing |
+| [pastewatch](https://github.com/ppiankov/pastewatch) | Sensitive data scanner — deterministic detection and obfuscation for text content |
