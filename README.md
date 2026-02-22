@@ -13,6 +13,7 @@ brew install ppiankov/tap/<formula>
 
 | Formula | Description |
 |---------|-------------|
+| [chainwatch](https://github.com/ppiankov/chainwatch) | Runtime control plane for AI agent safety |
 | [entropia](https://github.com/ppiankov/entropia) | Evidence support and decay diagnostics for public claims |
 | [noisepan](https://github.com/ppiankov/noisepan) | Signal extractor for noisy information streams |
 | [kubenow](https://github.com/ppiankov/kubenow) | Kubernetes resource analysis and cost optimization |
