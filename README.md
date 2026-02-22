@@ -5,21 +5,21 @@ Homebrew formulae for ppiankov tools.
 ## Install
 
 ```bash
-brew install ppiankov/tap/infranow
-brew install ppiankov/tap/kubenow
-brew install ppiankov/tap/trustwatch
-brew install ppiankov/tap/mongospectre
-brew install ppiankov/tap/pgspectre
-brew install ppiankov/tap/logtap
+brew tap ppiankov/tap
+brew install ppiankov/tap/<formula>
 ```
 
 ## Available Formulae
 
 | Formula | Description |
 |---------|-------------|
-| [infranow](https://github.com/ppiankov/infranow) | Real-time infrastructure triage for Kubernetes and Prometheus |
+| [entropia](https://github.com/ppiankov/entropia) | Evidence support and decay diagnostics for public claims |
+| [noisepan](https://github.com/ppiankov/noisepan) | Signal extractor for noisy information streams |
 | [kubenow](https://github.com/ppiankov/kubenow) | Kubernetes resource analysis and cost optimization |
+| [infranow](https://github.com/ppiankov/infranow) | Real-time infrastructure triage for Kubernetes and Prometheus |
 | [trustwatch](https://github.com/ppiankov/trustwatch) | Kubernetes trust surface monitoring |
+| [runforge](https://github.com/ppiankov/runforge) | Batch work order executor for agentic workflows |
 | [mongospectre](https://github.com/ppiankov/mongospectre) | MongoDB collection and index auditor |
 | [pgspectre](https://github.com/ppiankov/pgspectre) | PostgreSQL schema and usage auditor |
 | [logtap](https://github.com/ppiankov/logtap) | Ephemeral log mirror for Kubernetes load testing |
+
