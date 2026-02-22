@@ -20,6 +20,7 @@ brew install ppiankov/tap/<formula>
 | [trustwatch](https://github.com/ppiankov/trustwatch) | Kubernetes trust surface monitoring |
 | [runforge](https://github.com/ppiankov/runforge) | Batch work order executor for agentic workflows |
 | [mongospectre](https://github.com/ppiankov/mongospectre) | MongoDB collection and index auditor |
+| [kafkaspectre](https://github.com/ppiankov/kafkaspectre) | Kafka cluster auditor — identifies unused, orphaned, and misconfigured topics |
 | [pgspectre](https://github.com/ppiankov/pgspectre) | PostgreSQL schema and usage auditor |
 | [logtap](https://github.com/ppiankov/logtap) | Ephemeral log mirror for Kubernetes load testing |
 
