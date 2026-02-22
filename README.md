@@ -14,6 +14,7 @@ brew install ppiankov/tap/<formula>
 | Formula | Description |
 |---------|-------------|
 | [chainwatch](https://github.com/ppiankov/chainwatch) | Runtime control plane for AI agent safety |
+| [clickspectre](https://github.com/ppiankov/clickspectre) | ClickHouse usage analyzer — identifies unused tables and cleanup recommendations |
 | [entropia](https://github.com/ppiankov/entropia) | Evidence support and decay diagnostics for public claims |
 | [noisepan](https://github.com/ppiankov/noisepan) | Signal extractor for noisy information streams |
 | [vaultspectre](https://github.com/ppiankov/vaultspectre) | Vault secret usage auditor — find missing, unused, and stale secrets |
