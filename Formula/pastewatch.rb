@@ -4,14 +4,14 @@
 class Pastewatch < Formula
   desc "Sensitive data scanner — deterministic detection and obfuscation for text content"
   homepage "https://github.com/ppiankov/pastewatch"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   depends_on :macos
   depends_on arch: :arm64
 
-  url "https://github.com/ppiankov/pastewatch/releases/download/v0.3.0/pastewatch-cli"
-  sha256 "d44fca5a7e181c9ea3a752cd6177835370beabaaa277bd32c4ee2f489357009f"
+  url "https://github.com/ppiankov/pastewatch/releases/download/v0.4.0/pastewatch-cli"
+  sha256 "ca811674beda78063f5db1650fd405623972b02424307cae4833012833299c16"
 
   def install
     bin.install "pastewatch-cli"
