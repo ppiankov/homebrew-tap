@@ -4,28 +4,28 @@
 class Trustwatch < Formula
   desc "Kubernetes trust surface monitoring — discovers expiring certificates across webhooks, mesh, and more"
   homepage "https://github.com/ppiankov/trustwatch"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.1/trustwatch_0.3.1_darwin_arm64.tar.gz"
-      sha256 "52b3b21ef7059494a2921d60e2ddd9035fd0d377f29ee0e9cbfc23f5e78708e2"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.2/trustwatch_0.3.2_darwin_arm64.tar.gz"
+      sha256 "bc3759d90631eb1c0ff10d72efacddc5f36bd0d63c0d56c8f5b80c4a86e7a78b"
     end
     on_intel do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.1/trustwatch_0.3.1_darwin_amd64.tar.gz"
-      sha256 "84a707ede3b9747ca95137d5cec249d24a87fddbd3bd327474b143faf6c2903f"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.2/trustwatch_0.3.2_darwin_amd64.tar.gz"
+      sha256 "f051d7b95821f91574f7d48003e6864d996159d9bfcb10838cd4091b9d78f736"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.1/trustwatch_0.3.1_linux_arm64.tar.gz"
-      sha256 "8c0dac3803e9cfe7762c75caa584bfd7bcd0d40da6bd43ad8b155ec4cc40881c"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.2/trustwatch_0.3.2_linux_arm64.tar.gz"
+      sha256 "a66eb36e16855fe9229976974b54669ec60f0bd7f361d0c74b3ddf71e67f3eee"
     end
     on_intel do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.1/trustwatch_0.3.1_linux_amd64.tar.gz"
-      sha256 "1f775a3477b57f45f9c223944d6cf08f9fa059578a2dcc227822c22dd57a8d59"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.2/trustwatch_0.3.2_linux_amd64.tar.gz"
+      sha256 "9ad859c2a5d159c26f9e3098a59d4e9651e8f5ac697f25b348dfe956a17103ca"
     end
   end
 
