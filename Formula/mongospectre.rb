@@ -5,21 +5,21 @@
 class Mongospectre < Formula
   desc "MongoDB collection and index auditor — detects drift between code and live clusters"
   homepage "https://github.com/ppiankov/mongospectre"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.1/mongospectre_0.2.1_darwin_amd64.tar.gz"
-      sha256 "bf78cbce30aca49f7c61ec2c898ef9447e87e2314e33eef791a4815b61c5add9"
+      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.2/mongospectre_0.2.2_darwin_amd64.tar.gz"
+      sha256 "66aaac59bf665d3aad9feb69b706567fa34b92b970cfcbf9594982f22a5f46b4"
 
       define_method(:install) do
         bin.install "mongospectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.1/mongospectre_0.2.1_darwin_arm64.tar.gz"
-      sha256 "81ec46a04807aed600362ab75a8eab1265d06ee54adef2c37c0b002b9584f6c6"
+      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.2/mongospectre_0.2.2_darwin_arm64.tar.gz"
+      sha256 "62bc2c947b179a78635053e3d7a6b0a03539a27454896e55196d89cf951a31ee"
 
       define_method(:install) do
         bin.install "mongospectre"
@@ -29,15 +29,15 @@ class Mongospectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.1/mongospectre_0.2.1_linux_amd64.tar.gz"
-      sha256 "a5a894fc29d40c0747a0d206d84424bbfbb36231901e74698fe9117357463e2b"
+      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.2/mongospectre_0.2.2_linux_amd64.tar.gz"
+      sha256 "1553597f1e88c0e5172b1eff73d4c07117245a31e3a1112d1e6df2c3f976176f"
       define_method(:install) do
         bin.install "mongospectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.1/mongospectre_0.2.1_linux_arm64.tar.gz"
-      sha256 "eafebbf9c9a85b604ece6a88c3ddc0525a969451e21814362c93378de604a38d"
+      url "https://github.com/ppiankov/mongospectre/releases/download/v0.2.2/mongospectre_0.2.2_linux_arm64.tar.gz"
+      sha256 "ea8165ec038eec360c584f4b952c2248c3b7877d88ac481bc8ca90998b98b86d"
       define_method(:install) do
         bin.install "mongospectre"
       end
