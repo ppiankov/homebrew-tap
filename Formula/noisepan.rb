@@ -10,22 +10,22 @@ class Noisepan < Formula
   on_macos do
     on_arm do
       url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_darwin_arm64.tar.gz"
-      sha256 "ddde27a48c5cbd32473acd24490b1e90b72a188285c3bc2e4bc54af36426b2e3"
+      sha256 "b05352c2a552e99808d1c55610c9bf7f4f080684d8f0370f7634e54c17d2d000"
     end
     on_intel do
       url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_darwin_amd64.tar.gz"
-      sha256 "37f5c5ffc26adbed3d80dbebeb56c51d3f6519db31766f91d110c014f9624858"
+      sha256 "55e39f59c59f6a2db4cc256a4551751b109d16ad4b1a641099fb5471b1d345b7"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_linux_arm64.tar.gz"
-      sha256 "6ca65bf4802dc00697c024f034cdda86bea19be6c55d8227d4135bf7a2a49987"
+      sha256 "1a2e4ffc8d7ce4aae3a99c751565caaf56458472d2aae76744e37cf60bed1c7a"
     end
     on_intel do
       url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_linux_amd64.tar.gz"
-      sha256 "7a1b1d983416c2f1bdb04fcd6a352560b01c735e5e18062e54a013b8abeebbd1"
+      sha256 "8a75396c9a68da6b13b61d66141491c3a5e48d8e168779dd7f17ce144f103ea8"
     end
   end
 
