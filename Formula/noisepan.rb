@@ -4,28 +4,28 @@
 class Noisepan < Formula
   desc "Extract signal from noisy information streams"
   homepage "https://github.com/ppiankov/noisepan"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_darwin_arm64.tar.gz"
-      sha256 "b05352c2a552e99808d1c55610c9bf7f4f080684d8f0370f7634e54c17d2d000"
+      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.2/noisepan_0.4.2_darwin_arm64.tar.gz"
+      sha256 "352fedc359b4632648be63e0286a0948da68a3763914666d7d5c56bf970c7ee7"
     end
     on_intel do
-      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_darwin_amd64.tar.gz"
-      sha256 "55e39f59c59f6a2db4cc256a4551751b109d16ad4b1a641099fb5471b1d345b7"
+      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.2/noisepan_0.4.2_darwin_amd64.tar.gz"
+      sha256 "2596722e88acf626176ed11822163ed3b1b853c4bbb636f7a4217092b533f46b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_linux_arm64.tar.gz"
-      sha256 "1a2e4ffc8d7ce4aae3a99c751565caaf56458472d2aae76744e37cf60bed1c7a"
+      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.2/noisepan_0.4.2_linux_arm64.tar.gz"
+      sha256 "d7926f148d996dd581cce805e04b55f2c52cc1cc187f3fe6527667d101bed46b"
     end
     on_intel do
-      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.1/noisepan_0.4.1_linux_amd64.tar.gz"
-      sha256 "8a75396c9a68da6b13b61d66141491c3a5e48d8e168779dd7f17ce144f103ea8"
+      url "https://github.com/ppiankov/noisepan/releases/download/v0.4.2/noisepan_0.4.2_linux_amd64.tar.gz"
+      sha256 "0d148e20a8b45f4838f4ddc91d355098d46bd1823beffc85ac5c5028765c0429"
     end
   end
 
