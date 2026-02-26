@@ -10,22 +10,22 @@ class Entropia < Formula
   on_macos do
     on_arm do
       url "https://github.com/ppiankov/entropia/releases/download/v0.3.0/entropia_0.3.0_darwin_arm64.tar.gz"
-      sha256 "3cc80da185428986a0f18a09ebff7e8c70ec08641d1af5ee5152390758c0b1bd"
+      sha256 "9063c0ba04442dc90b2ec81eb2bba93657d9c1f5c84cf5f4383f6bbbad411f85"
     end
     on_intel do
       url "https://github.com/ppiankov/entropia/releases/download/v0.3.0/entropia_0.3.0_darwin_amd64.tar.gz"
-      sha256 "5c78943f9ae1355f96fb195325e12bbe852470092a1222b16f85402e57e1c545"
+      sha256 "b0955388b0996e4c43510caea9785907bf56a2ebfd7d49b774fdaa9deafa2544"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ppiankov/entropia/releases/download/v0.3.0/entropia_0.3.0_linux_arm64.tar.gz"
-      sha256 "a2420948ead430815e8ef83e75ad6b6964f3afa39916a3e2b58d6eccaf75b8be"
+      sha256 "ab560323b09aa95e4a57a2a7970c07bb9a5e3a6dfe1ac0c96f30290b6317ff76"
     end
     on_intel do
       url "https://github.com/ppiankov/entropia/releases/download/v0.3.0/entropia_0.3.0_linux_amd64.tar.gz"
-      sha256 "2a95d4f54ef2d74dd13b0b80f4b3705b2ffb873842b261edebe283f265569cec"
+      sha256 "d0e051726b050ee47c64b64126bdc64b0a58da6ed682bb7e82dc9558d25a2a0d"
     end
   end
 
