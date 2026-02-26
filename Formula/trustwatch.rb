@@ -4,34 +4,33 @@
 class Trustwatch < Formula
   desc "Kubernetes trust surface monitoring — discovers expiring certificates across webhooks, mesh, and more"
   homepage "https://github.com/ppiankov/trustwatch"
-  version "0.3.0"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.0/trustwatch_0.3.0_darwin_arm64.tar.gz"
-      sha256 "10ec2a85f2facdd3aff35a2309bd232031645ad0bc737f6acd77db548aee695f"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.2.2/trustwatch_0.2.2_darwin_arm64.tar.gz"
+      sha256 "cae56f9b49e3f797b94aedaae2f555bec66e65bc7becfc1d1ba8efb083a15980"
     end
     on_intel do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.0/trustwatch_0.3.0_darwin_amd64.tar.gz"
-      sha256 "101916d397360ce7fe48c41d0382f6a9dbe5a307ae8814ccc87b37c539e13b12"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.2.2/trustwatch_0.2.2_darwin_amd64.tar.gz"
+      sha256 "ade796317b6b4bee323334b8ba7b742f6f474172ce555994597a491d2a66b642"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.0/trustwatch_0.3.0_linux_arm64.tar.gz"
-      sha256 "a5191c1681f557e93d34203cff56b7517b6a93d64782589ebb6942bf65fb48bb"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.2.2/trustwatch_0.2.2_linux_arm64.tar.gz"
+      sha256 "668a2abd72cbe4de2aba36eb84d3fa41846821454ba5eeb6d82d780342d9daed"
     end
     on_intel do
-      url "https://github.com/ppiankov/trustwatch/releases/download/v0.3.0/trustwatch_0.3.0_linux_amd64.tar.gz"
-      sha256 "4f3b1336fe8f22e4d86453a1e8f23fe1579aaa3d7a3f7c189fa51884162eff11"
+      url "https://github.com/ppiankov/trustwatch/releases/download/v0.2.2/trustwatch_0.2.2_linux_amd64.tar.gz"
+      sha256 "2284ddd974a7509f3aa9608950f1592c563ae486bf33655967c67a3292264eed"
     end
   end
 
   def install
     bin.install "trustwatch"
-    bin.install_symlink "trustwatch" => "kubectl-trustwatch"
   end
 
   test do
