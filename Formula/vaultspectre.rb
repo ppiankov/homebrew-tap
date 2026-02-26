@@ -10,22 +10,22 @@ class Vaultspectre < Formula
   on_macos do
     on_arm do
       url "https://github.com/ppiankov/vaultspectre/releases/download/v0.3.0/vaultspectre_0.3.0_darwin_arm64.tar.gz"
-      sha256 "49e1147d1958ebf89095f49d07c699ca56391c386e1351f6f7d895528575f3d4"
+      sha256 "7f8380272b78de0897b7fb943adb22f7f898ff7558a6aa0f4c29c988be0fd551"
     end
     on_intel do
       url "https://github.com/ppiankov/vaultspectre/releases/download/v0.3.0/vaultspectre_0.3.0_darwin_amd64.tar.gz"
-      sha256 "c729628fc51e0a08b88b160dbf9caf19ae1f6f9dd48451cf03f07bbf2dec9e37"
+      sha256 "576c6fcc2029bd7a390e3c939c07fcbc51fb09f2f45d1a3f93913752927a8a02"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ppiankov/vaultspectre/releases/download/v0.3.0/vaultspectre_0.3.0_linux_arm64.tar.gz"
-      sha256 "b68b910141ba69e371999fbc1192b04790aa5772f1908dc63858b2605192d94f"
+      sha256 "a56324ef2fae102284933d0b009e765bc6c75bcc5eb4c5b4fa6c78e70476f9ef"
     end
     on_intel do
       url "https://github.com/ppiankov/vaultspectre/releases/download/v0.3.0/vaultspectre_0.3.0_linux_amd64.tar.gz"
-      sha256 "7256d70ffb1f9de408eae4b579977dbb395c96734fb8d33783092512b947da5a"
+      sha256 "06b5dc10c8360b4b6a78564fdc138c5b52b29a062d0a81b26121fd2410fb4dab"
     end
   end
 
