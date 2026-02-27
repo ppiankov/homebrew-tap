@@ -11,7 +11,7 @@ class Pastewatch < Formula
   depends_on arch: :arm64
 
   url "https://github.com/ppiankov/pastewatch/releases/download/v0.9.3/pastewatch-cli"
-  sha256 "446fd8a7fb85b9c9149d394dfabe69f47cc6de66f2be486754537927379342c5"
+  sha256 "a7e9e23a4dae21a1bfd4b1be3f50dc635b02f37e0743828e7a39ffb0684775a7"
 
   def install
     bin.install "pastewatch-cli"
