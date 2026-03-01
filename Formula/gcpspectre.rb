@@ -5,21 +5,21 @@
 class Gcpspectre < Formula
   desc "GCP resource waste auditor — finds idle, orphaned, and oversized resources"
   homepage "https://github.com/ppiankov/gcpspectre"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.2.0/gcpspectre_0.2.0_darwin_amd64.tar.gz"
-      sha256 "47da1aee81bd32c61bfc131f866f17c9d3c1937e842fd6e59fbef4f4d2856af2"
+      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.3.0/gcpspectre_0.3.0_darwin_amd64.tar.gz"
+      sha256 "1afd1557843acea88af18f11b4ffbe7b833e5c4497af37fe9a00cc0232fe2f70"
 
       define_method(:install) do
         bin.install "gcpspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.2.0/gcpspectre_0.2.0_darwin_arm64.tar.gz"
-      sha256 "4f25efed7e4f863d8b481f3ef659e33b5ff55cdba6ee7d5944bca1334a37da94"
+      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.3.0/gcpspectre_0.3.0_darwin_arm64.tar.gz"
+      sha256 "b8d085166ebc318faf9c41198dac1e5652161c98a8467e2f38d79103d2edb757"
 
       define_method(:install) do
         bin.install "gcpspectre"
@@ -29,15 +29,15 @@ class Gcpspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.2.0/gcpspectre_0.2.0_linux_amd64.tar.gz"
-      sha256 "4d3076922b1eb3a5b313c4e77807e6045022c70b8d4b1d4724f2fa48243f60bd"
+      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.3.0/gcpspectre_0.3.0_linux_amd64.tar.gz"
+      sha256 "68f73c7c31801cb7327b1a51527369da819ab34089e78a894c4b61f8b36d3ef2"
       define_method(:install) do
         bin.install "gcpspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.2.0/gcpspectre_0.2.0_linux_arm64.tar.gz"
-      sha256 "50c0f16792bbbb95ea1e1f61da0d395a3360f1414808b4664c5f680349726793"
+      url "https://github.com/ppiankov/gcpspectre/releases/download/v0.3.0/gcpspectre_0.3.0_linux_arm64.tar.gz"
+      sha256 "93dcf6fdb1cbe90de1726467f303a7982d0d02d11efc08565f4275dbb9d70047"
       define_method(:install) do
         bin.install "gcpspectre"
       end
