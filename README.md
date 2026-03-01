@@ -23,6 +23,7 @@ brew install ppiankov/tap/<formula>
 | [ecrspectre](https://github.com/ppiankov/ecrspectre) | Container registry waste auditor — finds stale, untagged, and oversized images |
 | [iamspectre](https://github.com/ppiankov/iamspectre) | Cross-cloud IAM auditor — finds unused, over-permissioned, and stale identities |
 | [cispectre](https://github.com/ppiankov/cispectre) | GitHub Actions waste auditor — finds idle, redundant, and misconfigured workflows |
+| [logspectre](https://github.com/ppiankov/logspectre) | Cloud logging waste auditor — finds idle, oversized, and misconfigured log groups |
 
 ### Database & Data Store Auditors
 
