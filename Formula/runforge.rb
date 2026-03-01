@@ -5,21 +5,21 @@
 class Runforge < Formula
   desc "Dependency-aware parallel task runner for AI coding agents"
   homepage "https://github.com/ppiankov/runforge"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/runforge/releases/download/v0.7.0/runforge_0.7.0_darwin_amd64.tar.gz"
-      sha256 "0cdbab6f2888235d92b8b8e8bcecafcbf92d11798d6fef9571f6869cf980a747"
+      url "https://github.com/ppiankov/runforge/releases/download/v0.8.0/runforge_0.8.0_darwin_amd64.tar.gz"
+      sha256 "57489308eb38a1d2e0d042c940a3b589dce70cad45f31d1cba3406228481ba1f"
 
       define_method(:install) do
         bin.install "runforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/runforge/releases/download/v0.7.0/runforge_0.7.0_darwin_arm64.tar.gz"
-      sha256 "b37751c95d0d63a7cbd123eb22399605c080006eb36dc8ffad2e25c597d0c1dd"
+      url "https://github.com/ppiankov/runforge/releases/download/v0.8.0/runforge_0.8.0_darwin_arm64.tar.gz"
+      sha256 "802503724e9027144059cf16eb598ff7dadaeb00fae66176c3e51ceb4d64cbe5"
 
       define_method(:install) do
         bin.install "runforge"
@@ -29,15 +29,15 @@ class Runforge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/runforge/releases/download/v0.7.0/runforge_0.7.0_linux_amd64.tar.gz"
-      sha256 "0701e151695fc82446f6974ede29d0e02a27df8967b678b92120fadcfeea9eab"
+      url "https://github.com/ppiankov/runforge/releases/download/v0.8.0/runforge_0.8.0_linux_amd64.tar.gz"
+      sha256 "1907a727059d4e54d263afbe1599bb6cd39f3fcb2b7bd03aecc416b1169dcf78"
       define_method(:install) do
         bin.install "runforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/runforge/releases/download/v0.7.0/runforge_0.7.0_linux_arm64.tar.gz"
-      sha256 "49fc27fc3311257c574a2d344eaf42e5c1bc3c8b3ef79640be655a981fb10f4d"
+      url "https://github.com/ppiankov/runforge/releases/download/v0.8.0/runforge_0.8.0_linux_arm64.tar.gz"
+      sha256 "a2cb5d74c15d6bcc06a8ca364b6815b7b434c16fa1531e0fcf1a22977018ba42"
       define_method(:install) do
         bin.install "runforge"
       end
