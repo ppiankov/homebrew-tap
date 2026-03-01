@@ -11,7 +11,7 @@ class Azurespectre < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ppiankov/azurespectre/releases/download/v0.1.0/azurespectre_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a1355e3be9906c16f3846db53ed13c3071a69b44456a575b569fa23746d319d8"
+      sha256 "a0ffa00a7dab68eed1a9223ac894aea6356f2331c2c007ac313b54d89fcbf595"
 
       define_method(:install) do
         bin.install "azurespectre"
@@ -19,7 +19,7 @@ class Azurespectre < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ppiankov/azurespectre/releases/download/v0.1.0/azurespectre_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8b9ce214954bc5a3e02eca8f04312cedf319e44f181ae23e1daf7ade0353618c"
+      sha256 "7681181887f1c7beea220574e988e3c072514eb2b8e636b4b01953542bba6e50"
 
       define_method(:install) do
         bin.install "azurespectre"
@@ -30,14 +30,14 @@ class Azurespectre < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/azurespectre/releases/download/v0.1.0/azurespectre_0.1.0_linux_amd64.tar.gz"
-      sha256 "58edac81df1ebee5b0ca2f0ad1bcb50b9f10828f3e1fcf75d24fc28732811ce6"
+      sha256 "1eb114c85829b530761581cb5aac4e8e6e59e5d7d33c18cc9e44d2bdb8ff4a8a"
       define_method(:install) do
         bin.install "azurespectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/azurespectre/releases/download/v0.1.0/azurespectre_0.1.0_linux_arm64.tar.gz"
-      sha256 "ce5f77e17732c0cd77b7f7cfecf142067af5a3852570c76a7d10a77d4c11bd8d"
+      sha256 "b846d9fbe707d8b9e2cacd946b3d9e5e30755264ce76572089414fbe01a97576"
       define_method(:install) do
         bin.install "azurespectre"
       end
