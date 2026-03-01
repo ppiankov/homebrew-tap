@@ -22,6 +22,7 @@ brew install ppiankov/tap/<formula>
 | [gcsspectre](https://github.com/ppiankov/gcsspectre) | GCP Cloud Storage auditor — finds unused, misconfigured, and wasteful GCS buckets |
 | [ecrspectre](https://github.com/ppiankov/ecrspectre) | Container registry waste auditor — finds stale, untagged, and oversized images |
 | [iamspectre](https://github.com/ppiankov/iamspectre) | Cross-cloud IAM auditor — finds unused, over-permissioned, and stale identities |
+| [cispectre](https://github.com/ppiankov/cispectre) | GitHub Actions waste auditor — finds idle, redundant, and misconfigured workflows |
 
 ### Database & Data Store Auditors
 
