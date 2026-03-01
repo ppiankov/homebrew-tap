@@ -16,6 +16,7 @@ brew install ppiankov/tap/<formula>
 | Formula | Description |
 |---------|-------------|
 | [awsspectre](https://github.com/ppiankov/awsspectre) | AWS resource waste auditor — finds idle, orphaned, and oversized resources |
+| [azurespectre](https://github.com/ppiankov/azurespectre) | Azure resource waste auditor — finds idle, orphaned, and oversized resources |
 | [gcpspectre](https://github.com/ppiankov/gcpspectre) | GCP resource waste auditor — finds idle, orphaned, and oversized resources |
 | [s3spectre](https://github.com/ppiankov/s3spectre) | AWS S3 bucket usage auditor — detects drift between code and live infrastructure |
 | [gcsspectre](https://github.com/ppiankov/gcsspectre) | GCP Cloud Storage auditor — finds unused, misconfigured, and wasteful GCS buckets |
