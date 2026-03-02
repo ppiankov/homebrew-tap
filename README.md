@@ -35,6 +35,7 @@ brew install ppiankov/tap/<formula>
 | [pgspectre](https://github.com/ppiankov/pgspectre) | PostgreSQL schema and usage auditor — detects drift between code and database |
 | [clickspectre](https://github.com/ppiankov/clickspectre) | ClickHouse usage analyzer — identifies unused tables and cleanup recommendations |
 | [kafkaspectre](https://github.com/ppiankov/kafkaspectre) | Kafka cluster auditor — identifies unused, orphaned, and misconfigured topics |
+| [snowspectre](https://github.com/ppiankov/snowspectre) | Snowflake warehouse and query waste auditor |
 
 ### Kubernetes & Infrastructure
 
