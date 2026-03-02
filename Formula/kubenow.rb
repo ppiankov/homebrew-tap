@@ -4,28 +4,28 @@
 class Kubenow < Formula
   desc "Kubernetes resource analysis and cost optimization — deterministic analysis, policy-gated apply, real-time monitoring"
   homepage "https://github.com/ppiankov/kubenow"
-  version "0.3.3"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.3.3/kubenow_0.3.3_darwin_arm64.tar.gz"
-      sha256 "9869d0bd12746d27ea61bb60ec9a1f4bec8da8405945b408d644045c0e500b46"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_darwin_arm64.tar.gz"
+      sha256 "06798462aecf04d940a6ce1badc3d1ecc6189b0f72a2aa50b7e8b7d189ea7b89"
     end
     on_intel do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.3.3/kubenow_0.3.3_darwin_amd64.tar.gz"
-      sha256 "9866a9cb32225259a3ea16b57814ff9e38a3635900d548bde81657618e8de11b"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_darwin_amd64.tar.gz"
+      sha256 "8b6c147dcf87dd61b3628d52b769235bd944616149d1ee8727152dc0a099824d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.3.3/kubenow_0.3.3_linux_arm64.tar.gz"
-      sha256 "6c17ca67ca5e469196d685dd85faad68eae7eefac5714f33a8d4d2868fbb42ca"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_linux_arm64.tar.gz"
+      sha256 "234b6639b991e32dfb4ab0f2a35c60c8af03aea72d1210af3c3527137aca630d"
     end
     on_intel do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.3.3/kubenow_0.3.3_linux_amd64.tar.gz"
-      sha256 "87e0a7634c3d6610b9484ebdd8bbb1ebfe56af39c43b56e484a7c36df2732b69"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_linux_amd64.tar.gz"
+      sha256 "40710c52b83316b59edd848e19e0f75f47fd7ba30e8d82d45fb0ca9b578adf63"
     end
   end
 
@@ -34,6 +34,6 @@ class Kubenow < Formula
   end
 
   test do
-    assert_match "kubenow version 0.3.3", shell_output("#{bin}/kubenow version")
+    assert_match "kubenow version 0.4.0", shell_output("#{bin}/kubenow version")
   end
 end
