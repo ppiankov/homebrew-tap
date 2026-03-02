@@ -24,6 +24,7 @@ brew install ppiankov/tap/<formula>
 | [iamspectre](https://github.com/ppiankov/iamspectre) | Cross-cloud IAM auditor — finds unused, over-permissioned, and stale identities |
 | [cispectre](https://github.com/ppiankov/cispectre) | GitHub Actions waste auditor — finds idle, redundant, and misconfigured workflows |
 | [logspectre](https://github.com/ppiankov/logspectre) | Cloud logging waste auditor — finds idle, oversized, and misconfigured log groups |
+| [dnsspectre](https://github.com/ppiankov/dnsspectre) | DNS waste and security auditor — finds dangling records, takeover risks, and misconfigurations |
 
 ### Database & Data Store Auditors
 
@@ -36,6 +37,7 @@ brew install ppiankov/tap/<formula>
 | [clickspectre](https://github.com/ppiankov/clickspectre) | ClickHouse usage analyzer — identifies unused tables and cleanup recommendations |
 | [kafkaspectre](https://github.com/ppiankov/kafkaspectre) | Kafka cluster auditor — identifies unused, orphaned, and misconfigured topics |
 | [snowspectre](https://github.com/ppiankov/snowspectre) | Snowflake warehouse and query waste auditor |
+| [elasticspectre](https://github.com/ppiankov/elasticspectre) | Elasticsearch and OpenSearch waste auditor |
 
 ### Kubernetes & Infrastructure
 
