@@ -10,22 +10,22 @@ class Kubenow < Formula
   on_macos do
     on_arm do
       url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_darwin_arm64.tar.gz"
-      sha256 "c6ef1ffddd7c160ba4323fddbc895778892180a914bda6ef33d19a3c6160218e"
+      sha256 "e40976ae818b0be98807e91dec6326a971145c4b6638746fad53d24dff0e0c01"
     end
     on_intel do
       url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_darwin_amd64.tar.gz"
-      sha256 "bb579523cc271f9bffc8dced5236574fe33874181d9da2cc54ffb90b9c9e0993"
+      sha256 "1855c87e53b58f0196c3dc3caf6da0d0b57c2ee121954094b655c25ddb2ab386"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_linux_arm64.tar.gz"
-      sha256 "32e1732346f3034a369fc910d1ef14dc88c4c4d73b69a52241aa44c310890203"
+      sha256 "174c0480fb8912f20fae789c1ff8135eb650dcf6e5439dbefe17356571ff6cf3"
     end
     on_intel do
       url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_linux_amd64.tar.gz"
-      sha256 "0b3ed17475cae63b5c7122be35431125841ec49d6824e754c4ca4c0a9aeb1545"
+      sha256 "d3617d67a32703d30f6d5197cf8be8d4396ba011b53153ba55b00b3ecd4424cb"
     end
   end
 
@@ -34,6 +34,6 @@ class Kubenow < Formula
   end
 
   test do
-    assert_match "kubenow version 0.4.0", shell_output("#{bin}/kubenow version")
+    assert_match "kubenow 0.4.0", shell_output("#{bin}/kubenow version")
   end
 end
