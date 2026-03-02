@@ -57,6 +57,12 @@ brew install ppiankov/tap/<formula>
 | [pastewatch](https://github.com/ppiankov/pastewatch) | Sensitive data scanner — deterministic detection and obfuscation |
 | [chainwatch](https://github.com/ppiankov/chainwatch) | Runtime control plane for AI agent safety |
 
+### AI/LLM Auditors
+
+| Formula | Description |
+|---------|-------------|
+| [aispectre](https://github.com/ppiankov/aispectre) | AI/LLM spend waste auditor — finds idle API keys, underused models, and wasted compute |
+
 ### Developer Tools
 
 | Formula | Description |
