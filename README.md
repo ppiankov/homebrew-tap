@@ -61,6 +61,7 @@ brew install ppiankov/tap/<formula>
 
 | Formula | Description |
 |---------|-------------|
+| [contextspectre](https://github.com/ppiankov/contextspectre) | Claude Code conversation context manager — reasoning hygiene for long sessions |
 | [runforge](https://github.com/ppiankov/runforge) | Dependency-aware parallel task runner for AI coding agents |
 | [ancc](https://github.com/ppiankov/ancc) | Static validator for the Agent-Native CLI Convention |
 | [entropia](https://github.com/ppiankov/entropia) | Evidence support and decay diagnostics for public claims |
