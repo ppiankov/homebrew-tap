@@ -5,21 +5,21 @@
 class Ancc < Formula
   desc "Static validator for the Agent-Native CLI Convention"
   homepage "https://github.com/ppiankov/ancc"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.2.2/ancc-0.2.2-darwin-amd64.tar.gz"
-      sha256 "06ef977fae07bc0f2d575e1e290609b0bded15fe5962d2f44c91c5898c9476df"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.2.3/ancc-0.2.3-darwin-amd64.tar.gz"
+      sha256 "c1d97c54d77777c976d9cfa63c99a35aef0c9689d5259425c5a00e0898edea68"
 
       define_method(:install) do
         bin.install "ancc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.2.2/ancc-0.2.2-darwin-arm64.tar.gz"
-      sha256 "e223c2f8e697d2829809f27db0f58824405c1a88edd4e40bcd7acdb9091edeb7"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.2.3/ancc-0.2.3-darwin-arm64.tar.gz"
+      sha256 "52f4ea64da5acc6481bab2191c622bfb11d01196563b1e525851d64ff681f616"
 
       define_method(:install) do
         bin.install "ancc"
@@ -29,15 +29,15 @@ class Ancc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.2.2/ancc-0.2.2-linux-amd64.tar.gz"
-      sha256 "d5316e98e859a6d92a40fd56bf098e56e20043564684104bc26921774ba7e4da"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.2.3/ancc-0.2.3-linux-amd64.tar.gz"
+      sha256 "81cb7762998b266b445f148f665274713b6c6ae968283279446a1ebc391f09dd"
       define_method(:install) do
         bin.install "ancc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.2.2/ancc-0.2.2-linux-arm64.tar.gz"
-      sha256 "86f51055b06da38547a624028d544a9fb44817bb6c23e927799f72a82de09dae"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.2.3/ancc-0.2.3-linux-arm64.tar.gz"
+      sha256 "98f1385aeefb9048e263bdb447717852db02df93803fe4d587442f1ff0b3cda4"
       define_method(:install) do
         bin.install "ancc"
       end
