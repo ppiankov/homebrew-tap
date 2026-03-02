@@ -11,7 +11,7 @@ class Contextspectre < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ppiankov/contextspectre/releases/download/v0.1.0/contextspectre_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cdc2fe045d2e9f116116f5f98f64e8b967b42284b9c4448a287ef9d47ac53f93"
+      sha256 "b0f9af0ce03327b9c4bfd47315c096f37417197edf0ed74329d5434a6012ee68"
 
       define_method(:install) do
         bin.install "contextspectre"
@@ -19,7 +19,7 @@ class Contextspectre < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ppiankov/contextspectre/releases/download/v0.1.0/contextspectre_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c65e64885f9170e2897d5b5bf7b7aa93317e0e153c8eb4969b9a3b87e38284d8"
+      sha256 "afdd03ecaac5996f09597d7235446cdcc3d63276d0e36d32af2d4a0a06e0cf5a"
 
       define_method(:install) do
         bin.install "contextspectre"
@@ -30,14 +30,14 @@ class Contextspectre < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/contextspectre/releases/download/v0.1.0/contextspectre_0.1.0_linux_amd64.tar.gz"
-      sha256 "c43d628f8f6df65bc013ab06a880c0ae4338f016cb336933a0c4b1651b817785"
+      sha256 "772d9f832264e166f4d918053d6dd1597b1cd30b497e06a4ccca9e5036a74dcf"
       define_method(:install) do
         bin.install "contextspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/contextspectre/releases/download/v0.1.0/contextspectre_0.1.0_linux_arm64.tar.gz"
-      sha256 "acce040399dc774fc599ef3dd071a27ba457ecc798364fa27dd8e1ae277151fd"
+      sha256 "acf58b7a02ee89fece5177cb2584d852c84398e7c206f88c031c843d7b27800b"
       define_method(:install) do
         bin.install "contextspectre"
       end
