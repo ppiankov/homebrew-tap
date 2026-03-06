@@ -4,28 +4,28 @@
 class Kubenow < Formula
   desc "Kubernetes resource analysis and cost optimization — deterministic analysis, policy-gated apply, real-time monitoring"
   homepage "https://github.com/ppiankov/kubenow"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_darwin_arm64.tar.gz"
-      sha256 "374d8b0fd5e3f9fea64ad049568ea5d1b00a9aa4b4f3a662a81d415e56029e43"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.1/kubenow_0.4.1_darwin_arm64.tar.gz"
+      sha256 "26163bc0dcf40cb020f16ad409c1313c54e14224431178a25a47f987b9fb80d1"
     end
     on_intel do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_darwin_amd64.tar.gz"
-      sha256 "7f5e86729e7736cc6ec2a19127733924e334c0a4ff714760e4ea6b27f17b00b6"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.1/kubenow_0.4.1_darwin_amd64.tar.gz"
+      sha256 "862005a4e24922847c40ba1dff7091088b7c647cbf7704fe677c0362035ef319"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_linux_arm64.tar.gz"
-      sha256 "9989b3055164b0ddff02e631f973d77e2c498349c808aef6f96d38b9e9faed1e"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.1/kubenow_0.4.1_linux_arm64.tar.gz"
+      sha256 "ab83ea21094c2bad05f726719090c8dad1d22e2b808c53830d89715fcb269e33"
     end
     on_intel do
-      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.0/kubenow_0.4.0_linux_amd64.tar.gz"
-      sha256 "846643cf6b4fa9444ee1bc4d36800aa639fadb65b6ea7b19bd530cd2e5258f08"
+      url "https://github.com/ppiankov/kubenow/releases/download/v0.4.1/kubenow_0.4.1_linux_amd64.tar.gz"
+      sha256 "30506a031a17b59f16f38a45e8f5eb9cc8e725c76f4d0bd4b14edd919e3c72bd"
     end
   end
 
@@ -34,6 +34,6 @@ class Kubenow < Formula
   end
 
   test do
-    assert_match "kubenow 0.4.0", shell_output("#{bin}/kubenow version")
+    assert_match "kubenow 0.4.1", shell_output("#{bin}/kubenow version")
   end
 end
