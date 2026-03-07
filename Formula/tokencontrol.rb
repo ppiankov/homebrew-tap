@@ -5,21 +5,21 @@
 class Tokencontrol < Formula
   desc "Dependency-aware parallel task runner for AI coding agents"
   homepage "https://github.com/ppiankov/tokencontrol"
-  version "0.17.3"
+  version "0.18.0"
   license "BUSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.17.3/tokencontrol_0.17.3_darwin_amd64.tar.gz"
-      sha256 "9ab24c08a06890736e50f1890ab4b3fde924868db892dc6c69e0ec43e9aa177c"
+      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.18.0/tokencontrol_0.18.0_darwin_amd64.tar.gz"
+      sha256 "1d46f3040e5e9c947044141aa4e6f3c286054b89506e54968641d3c2b7954ebc"
 
       define_method(:install) do
         bin.install "tokencontrol"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.17.3/tokencontrol_0.17.3_darwin_arm64.tar.gz"
-      sha256 "c995c299bf39e8689e09dd8f1f9314e22e421dc78b45a557a26d7f57d4d2fcb3"
+      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.18.0/tokencontrol_0.18.0_darwin_arm64.tar.gz"
+      sha256 "c4c289c38be1a74a34ef2c7f3fdd3bd6829e3c62de60b6b8ef5f8f6052a9b65d"
 
       define_method(:install) do
         bin.install "tokencontrol"
@@ -29,15 +29,15 @@ class Tokencontrol < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.17.3/tokencontrol_0.17.3_linux_amd64.tar.gz"
-      sha256 "f114cdefd2b422e761c11375c0d1fde0d06d864df27d0fcdb928c0304463f77d"
+      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.18.0/tokencontrol_0.18.0_linux_amd64.tar.gz"
+      sha256 "37647eba7a2d839de17a81fd34a1e4eda0c58e9497e072ef2804d298b6a7a8d8"
       define_method(:install) do
         bin.install "tokencontrol"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.17.3/tokencontrol_0.17.3_linux_arm64.tar.gz"
-      sha256 "4392065e4e8f57741b8f4acb1e0b0ae489273d5b6f8aee802f44daaffc958305"
+      url "https://github.com/ppiankov/tokencontrol/releases/download/v0.18.0/tokencontrol_0.18.0_linux_arm64.tar.gz"
+      sha256 "dc793f7cb8f943c842ef8a37a53dfd46d74626707541bdb3ce3a914283f0d086"
       define_method(:install) do
         bin.install "tokencontrol"
       end
