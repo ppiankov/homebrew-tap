@@ -5,21 +5,21 @@
 class Contextspectre < Formula
   desc "Claude Code conversation context manager"
   homepage "https://github.com/ppiankov/contextspectre"
-  version "0.37.0"
+  version "0.38.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/contextspectre/releases/download/v0.37.0/contextspectre_0.37.0_darwin_amd64.tar.gz"
-      sha256 "02416a3ff160b82e0edd28518da13e95700ff87bb50de33bb69a4b3d45e3b564"
+      url "https://github.com/ppiankov/contextspectre/releases/download/v0.38.0/contextspectre_0.38.0_darwin_amd64.tar.gz"
+      sha256 "2cf9cb247191fb0e2fa37a363d95f87c29ea4bcf341d3ce0e942aadbc9c60fd4"
 
       define_method(:install) do
         bin.install "contextspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/contextspectre/releases/download/v0.37.0/contextspectre_0.37.0_darwin_arm64.tar.gz"
-      sha256 "cb05674c9f8ab63bf062c6b83f2703a818c9520f403252f67726f4eac0fb9ff6"
+      url "https://github.com/ppiankov/contextspectre/releases/download/v0.38.0/contextspectre_0.38.0_darwin_arm64.tar.gz"
+      sha256 "3a8b325076d367bb14eb0080728eb61107c92a4603d1c8fa4abd75ec3d25b44b"
 
       define_method(:install) do
         bin.install "contextspectre"
@@ -29,15 +29,15 @@ class Contextspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/contextspectre/releases/download/v0.37.0/contextspectre_0.37.0_linux_amd64.tar.gz"
-      sha256 "367a344aff85fdede1151121da5aa199d51c50ad155e1ead859096cc1718765a"
+      url "https://github.com/ppiankov/contextspectre/releases/download/v0.38.0/contextspectre_0.38.0_linux_amd64.tar.gz"
+      sha256 "738b37e4879c3e80b8b24bf4cd2c9b47511852f548e06dea522a4cc6f040aa61"
       define_method(:install) do
         bin.install "contextspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/contextspectre/releases/download/v0.37.0/contextspectre_0.37.0_linux_arm64.tar.gz"
-      sha256 "2b1e9be7f7ece01022bc3477a7ef4ced363f77142bf4786ea32223610e405768"
+      url "https://github.com/ppiankov/contextspectre/releases/download/v0.38.0/contextspectre_0.38.0_linux_arm64.tar.gz"
+      sha256 "f6aee8c042a2f18c42a3d272ea359c67361d7aafad8b301b7296d5b970eb2dab"
       define_method(:install) do
         bin.install "contextspectre"
       end
