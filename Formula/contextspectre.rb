@@ -15,6 +15,7 @@ class Contextspectre < Formula
 
       define_method(:install) do
         bin.install "contextspectre"
+        bin.install_symlink "contextspectre" => "cs"
       end
     end
     if Hardware::CPU.arm?
@@ -23,6 +24,7 @@ class Contextspectre < Formula
 
       define_method(:install) do
         bin.install "contextspectre"
+        bin.install_symlink "contextspectre" => "cs"
       end
     end
   end
@@ -33,6 +35,7 @@ class Contextspectre < Formula
       sha256 "69325c0c4e73663db1b6d42fe315891b3957322022a0b3f4a4f3aa7dbbd7cb6f"
       define_method(:install) do
         bin.install "contextspectre"
+        bin.install_symlink "contextspectre" => "cs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -40,6 +43,7 @@ class Contextspectre < Formula
       sha256 "34fc722240e6089c44844bb5d30de7a053d057f6bd7b966510a2240986e46d5c"
       define_method(:install) do
         bin.install "contextspectre"
+        bin.install_symlink "contextspectre" => "cs"
       end
     end
   end
