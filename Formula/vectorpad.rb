@@ -5,13 +5,13 @@
 class Vectorpad < Formula
   desc "Pre-flight staging area for reasoning intent"
   homepage "https://github.com/ppiankov/vectorpad"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/vectorpad/releases/download/v0.12.0/vectorpad_0.12.0_darwin_amd64.tar.gz"
-      sha256 "180f9e905f4a8ddc9a7d03c4bb798a48a1ac898bd17f2046350be3bde3e0b2f4"
+      url "https://github.com/ppiankov/vectorpad/releases/download/v0.13.0/vectorpad_0.13.0_darwin_amd64.tar.gz"
+      sha256 "0f57929987c4490e36f61d383164fb42fa34fcdc47bd193aafcd1804e20f55ec"
 
       define_method(:install) do
         bin.install "vectorpad"
@@ -19,8 +19,8 @@ class Vectorpad < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/vectorpad/releases/download/v0.12.0/vectorpad_0.12.0_darwin_arm64.tar.gz"
-      sha256 "7d5772bc7a52d842e770ef327c6a0f2026fd0c78fb6eefc234bdc94d1f69793a"
+      url "https://github.com/ppiankov/vectorpad/releases/download/v0.13.0/vectorpad_0.13.0_darwin_arm64.tar.gz"
+      sha256 "95e52da5d0cdac9cb38447d33950b34bec6fc8af1adb155cf23fee637666e4b1"
 
       define_method(:install) do
         bin.install "vectorpad"
@@ -31,16 +31,16 @@ class Vectorpad < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/vectorpad/releases/download/v0.12.0/vectorpad_0.12.0_linux_amd64.tar.gz"
-      sha256 "dc803ec43ed115333dcd458051ce383635157665070270ded9ad58b1ace6ef6c"
+      url "https://github.com/ppiankov/vectorpad/releases/download/v0.13.0/vectorpad_0.13.0_linux_amd64.tar.gz"
+      sha256 "1f5fb0e7b39a8dad12a17f7dc5d957a37638d98604bc6c451fb4eaf49e5a3993"
       define_method(:install) do
         bin.install "vectorpad"
         generate_completions_from_executable(bin/"vectorpad", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/vectorpad/releases/download/v0.12.0/vectorpad_0.12.0_linux_arm64.tar.gz"
-      sha256 "d0fa1aacf86d7e16030fa3d146f288c00c9a43efcf3cb74e0b241efac3e02071"
+      url "https://github.com/ppiankov/vectorpad/releases/download/v0.13.0/vectorpad_0.13.0_linux_arm64.tar.gz"
+      sha256 "61b7c337b83e9d1a17bb11ae6094ab02a8ee71a833fe830e079163fb750b7e57"
       define_method(:install) do
         bin.install "vectorpad"
         generate_completions_from_executable(bin/"vectorpad", "completion")
