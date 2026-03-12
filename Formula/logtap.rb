@@ -5,13 +5,13 @@
 class Logtap < Formula
   desc "Ephemeral log mirror for load testing"
   homepage "https://github.com/ppiankov/logtap"
-  version "1.9.10"
+  version "1.9.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/logtap/releases/download/v1.9.10/logtap_1.9.10_darwin_amd64.tar.gz"
-      sha256 "47a48b5e6c02e9523bb4f3265781a0f4fa71dd6670542d19e60de0765e2aae32"
+      url "https://github.com/ppiankov/logtap/releases/download/v1.9.11/logtap_1.9.11_darwin_amd64.tar.gz"
+      sha256 "cd7851c5213a4bba9aa328f90be57bdb6cc55199081cd06ef915bdeb8b1960a6"
 
       define_method(:install) do
         bin.install "logtap"
@@ -19,8 +19,8 @@ class Logtap < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/logtap/releases/download/v1.9.10/logtap_1.9.10_darwin_arm64.tar.gz"
-      sha256 "88148ca96d9db62a88b7134504852bb856a0a352a196afc862cd309cf27edcff"
+      url "https://github.com/ppiankov/logtap/releases/download/v1.9.11/logtap_1.9.11_darwin_arm64.tar.gz"
+      sha256 "1c6a9df13342e7556c2cb454411a80a598a12e1b9b576c12ddd6aa45abab928c"
 
       define_method(:install) do
         bin.install "logtap"
@@ -31,16 +31,16 @@ class Logtap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/logtap/releases/download/v1.9.10/logtap_1.9.10_linux_amd64.tar.gz"
-      sha256 "6151f482d71fbcb41bdd2ad1e85a01d90f87bdcc1822f38d6be6918dcd45b139"
+      url "https://github.com/ppiankov/logtap/releases/download/v1.9.11/logtap_1.9.11_linux_amd64.tar.gz"
+      sha256 "f4b0b2f043904a733a84cef4470f97299a893a48cded2bbd83481470c00ea23a"
       define_method(:install) do
         bin.install "logtap"
         generate_completions_from_executable(bin/"logtap", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/logtap/releases/download/v1.9.10/logtap_1.9.10_linux_arm64.tar.gz"
-      sha256 "9181510542bc90ebe3e46b37017fb3dcbc173ab6dbf11cdb717d21a8ec0a5b13"
+      url "https://github.com/ppiankov/logtap/releases/download/v1.9.11/logtap_1.9.11_linux_arm64.tar.gz"
+      sha256 "2080ffc2db125f700a91b639f504d972ea8ebef3bc1e65918f9d695decf9bd64"
       define_method(:install) do
         bin.install "logtap"
         generate_completions_from_executable(bin/"logtap", "completion")
