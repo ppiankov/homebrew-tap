@@ -11,7 +11,7 @@ class Tokencontrol < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ppiankov/tokencontrol/releases/download/v0.24.3/tokencontrol_0.24.3_darwin_amd64.tar.gz"
-      sha256 "60e78f4022ed702bd5a4f8aa02241d54cc1bed1f4e17ea23ebc9da47cd7d2380"
+      sha256 "00a3d77db3125d8770553870ca7dabdf9cd7c8007dd84bae3a652ce66582cf24"
 
       define_method(:install) do
         bin.install "tokencontrol"
@@ -19,7 +19,7 @@ class Tokencontrol < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ppiankov/tokencontrol/releases/download/v0.24.3/tokencontrol_0.24.3_darwin_arm64.tar.gz"
-      sha256 "47c9aff1e43214898e8cc12ac062b79618bc2022473b45ab921bb5cba80bbb75"
+      sha256 "d93ab73c1f68601b3f36bd583ddb2db1ed0e76226e15dac36bdfbd1b298a78a1"
 
       define_method(:install) do
         bin.install "tokencontrol"
@@ -30,14 +30,14 @@ class Tokencontrol < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/tokencontrol/releases/download/v0.24.3/tokencontrol_0.24.3_linux_amd64.tar.gz"
-      sha256 "95d454b6752339be1dc19257148a2557e64c22a82d1bfce3c87a8b812f76953e"
+      sha256 "dbb6ec64c1a057437918297fc64c066fd5e749930fc1bed74b004a5ed63fea97"
       define_method(:install) do
         bin.install "tokencontrol"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/tokencontrol/releases/download/v0.24.3/tokencontrol_0.24.3_linux_arm64.tar.gz"
-      sha256 "80db4fb8f38f8d586ac35348327e7a5f5296eb1b47b8527419c6c7d23f50df62"
+      sha256 "ee62d42274b477e92c5721af84fe4e74925d1819b681aff938b5cbf24be12fa3"
       define_method(:install) do
         bin.install "tokencontrol"
       end
