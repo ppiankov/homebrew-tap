@@ -5,21 +5,21 @@
 class Pgpulse < Formula
   desc "PostgreSQL metrics exporter for Prometheus"
   homepage "https://github.com/ppiankov/pgpulse"
-  version "0.4.6"
+  version "0.4.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.6/pgpulse_0.4.6_darwin_amd64.tar.gz"
-      sha256 "c006c3a20e0d2abd6192a6159aa2a0827187f6bbdca6b032ef91325b4777b294"
+      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.7/pgpulse_0.4.7_darwin_amd64.tar.gz"
+      sha256 "4481410c7550fe378ba72f5534d1b9fb7060f41b7ed910fbd2a978dd9b95a1a8"
 
       define_method(:install) do
         bin.install "pgpulse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.6/pgpulse_0.4.6_darwin_arm64.tar.gz"
-      sha256 "e086364df2d1c13fbbd09a1280ec0a3c5c0e3f0c292c7056df20f93a02d739b4"
+      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.7/pgpulse_0.4.7_darwin_arm64.tar.gz"
+      sha256 "60ef0dfc10187d368c2b5886be68224c7c223229002ba2e5be97eac8dfe0aabf"
 
       define_method(:install) do
         bin.install "pgpulse"
@@ -29,15 +29,15 @@ class Pgpulse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.6/pgpulse_0.4.6_linux_amd64.tar.gz"
-      sha256 "5dfa68ee3b91ed5f5d3727aafdf5c07a63e0284529ca12b726aab5fd832fbd7e"
+      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.7/pgpulse_0.4.7_linux_amd64.tar.gz"
+      sha256 "9bdd7ef284aae625f81c636a659707593e2f50ee98fbee2aa8ae949ecf43969c"
       define_method(:install) do
         bin.install "pgpulse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.6/pgpulse_0.4.6_linux_arm64.tar.gz"
-      sha256 "3e97af9bf7b4fd118f3d53c84c2efacd945c290a849be8e2bc6c1d37363cc1f6"
+      url "https://github.com/ppiankov/pgpulse/releases/download/v0.4.7/pgpulse_0.4.7_linux_arm64.tar.gz"
+      sha256 "ffc69d2cdb2bfa9cad35d368a180e0cb54e5660416484411897ba9c1719f5785"
       define_method(:install) do
         bin.install "pgpulse"
       end
