@@ -11,7 +11,7 @@ class Ancc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ppiankov/ancc/releases/download/v0.7.0/ancc-0.7.0-darwin-amd64.tar.gz"
-      sha256 "9aa56861e3b39cf56311cdbd7947d374df3178b8d3a50c6e3096a1c10aa88593"
+      sha256 "ce94fcaebc6f5070b63ed9c563527b49de95885bb3dc0e38f77feb1d4a3a7568"
 
       define_method(:install) do
         bin.install "ancc"
@@ -19,7 +19,7 @@ class Ancc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ppiankov/ancc/releases/download/v0.7.0/ancc-0.7.0-darwin-arm64.tar.gz"
-      sha256 "390060bd37bcc8132f9b0e8565923f5c0bd6c5096a118152aaf08ff6c8e25a9a"
+      sha256 "878cb9290d38d105301981266c555d76cfd49188d509fa88680c2c8524e1407e"
 
       define_method(:install) do
         bin.install "ancc"
@@ -30,14 +30,14 @@ class Ancc < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/ancc/releases/download/v0.7.0/ancc-0.7.0-linux-amd64.tar.gz"
-      sha256 "e97c2b34955c40ae0e6ab7fc50e8b7bc5142bc7d42082b587953c67c9c272142"
+      sha256 "69784477c9a914f9ec84c087e2c6052658e3a2a68c624b5fb4d5d22de62f0a99"
       define_method(:install) do
         bin.install "ancc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/ancc/releases/download/v0.7.0/ancc-0.7.0-linux-arm64.tar.gz"
-      sha256 "ae558c5efe14e979ea97a7f684435ca7e611a84ee957d91b77c3bf85fec0790c"
+      sha256 "d9488ba42deecd346686de294460dfdedca3beee1e8feb5f773936b4d0f57aa1"
       define_method(:install) do
         bin.install "ancc"
       end
