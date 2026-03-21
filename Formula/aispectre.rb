@@ -5,21 +5,21 @@
 class Aispectre < Formula
   desc "AI/LLM spend waste auditor"
   homepage "https://github.com/ppiankov/aispectre"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.0/aispectre_0.2.0_darwin_amd64.tar.gz"
-      sha256 "b0b3743d464720f42e6541c5fc00a3201826c55110938491701516490c0e94e0"
+      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.1/aispectre_0.2.1_darwin_amd64.tar.gz"
+      sha256 "c88a10192e57a4a0e3d088a0ef5694428407735c244bf94197bfe45137af50a7"
 
       define_method(:install) do
         bin.install "aispectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.0/aispectre_0.2.0_darwin_arm64.tar.gz"
-      sha256 "52e9a47a3a26b70253e4379f85562fa1833db9254e2b4f8dd72fababa3abfc8d"
+      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.1/aispectre_0.2.1_darwin_arm64.tar.gz"
+      sha256 "719e725949bfaec6e25b864f4cc8d0e6cc19788e4b3fe7194da82ef26f00105a"
 
       define_method(:install) do
         bin.install "aispectre"
@@ -29,15 +29,15 @@ class Aispectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.0/aispectre_0.2.0_linux_amd64.tar.gz"
-      sha256 "1b7a2234b7fd82146e151b65145a27c12bd438204b8c995137ef3725f4a0576a"
+      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.1/aispectre_0.2.1_linux_amd64.tar.gz"
+      sha256 "750a9cffa2af851c0d8f535b5651ae4e06ccce27149fe0daae89139ee0184b51"
       define_method(:install) do
         bin.install "aispectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.0/aispectre_0.2.0_linux_arm64.tar.gz"
-      sha256 "b0c760ff67809e9f68d6f9326103dbd5a999973964e85a09d9f4b14eae1fa14a"
+      url "https://github.com/ppiankov/aispectre/releases/download/v0.2.1/aispectre_0.2.1_linux_arm64.tar.gz"
+      sha256 "fbd5ab44755354015b8ac69b5144de9af4bcb8fd1e5a95ad28b968c7799245da"
       define_method(:install) do
         bin.install "aispectre"
       end
