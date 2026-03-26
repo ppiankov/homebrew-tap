@@ -5,21 +5,21 @@
 class Clickspectre < Formula
   desc "ClickHouse usage analyzer — identifies unused tables, service dependencies, and cleanup recommendations"
   homepage "https://github.com/ppiankov/clickspectre"
-  version "1.0.2"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/clickspectre/releases/download/v1.0.2/clickspectre_1.0.2_darwin_amd64.tar.gz"
-      sha256 "7c82139faf313657624e38db78a8faa04d3d849a35d834d5f895a9085b627b25"
+      url "https://github.com/ppiankov/clickspectre/releases/download/v1.1.0/clickspectre_1.1.0_darwin_amd64.tar.gz"
+      sha256 "35a8dcda176176e92fde589791b64e9a7bf27bd6ac8cbd8663a4b5e6022f8177"
 
       define_method(:install) do
         bin.install "clickspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/clickspectre/releases/download/v1.0.2/clickspectre_1.0.2_darwin_arm64.tar.gz"
-      sha256 "e558586d73c84a3f59377a6340c2c40ff361b473ae628213b177eb5655b09d13"
+      url "https://github.com/ppiankov/clickspectre/releases/download/v1.1.0/clickspectre_1.1.0_darwin_arm64.tar.gz"
+      sha256 "8fe750612ce90e5a4250c6043b2f8b8e60d9cf31731de8f12eecc094b09c9dd1"
 
       define_method(:install) do
         bin.install "clickspectre"
@@ -29,15 +29,15 @@ class Clickspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/clickspectre/releases/download/v1.0.2/clickspectre_1.0.2_linux_amd64.tar.gz"
-      sha256 "395af927db8665e599c77d4d29e2d0827550cdf08ef0c5ce8aae36e8236474c6"
+      url "https://github.com/ppiankov/clickspectre/releases/download/v1.1.0/clickspectre_1.1.0_linux_amd64.tar.gz"
+      sha256 "0d95e34f65f898bc51f9c0291b1574d2aaaacdec174dc560c28315a0e1aa8855"
       define_method(:install) do
         bin.install "clickspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/clickspectre/releases/download/v1.0.2/clickspectre_1.0.2_linux_arm64.tar.gz"
-      sha256 "e14c98096fe152fd5eed55259fdae8edfdecfcc6efc692af796ced12f048752c"
+      url "https://github.com/ppiankov/clickspectre/releases/download/v1.1.0/clickspectre_1.1.0_linux_arm64.tar.gz"
+      sha256 "6cdda1602c213da2bc68ce1a636a17b4e985353ef92791155a820a3bdb7ed477"
       define_method(:install) do
         bin.install "clickspectre"
       end
