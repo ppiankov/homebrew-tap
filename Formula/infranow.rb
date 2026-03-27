@@ -5,21 +5,21 @@
 class Infranow < Formula
   desc "Real-time infrastructure triage — deterministic problem detection for Kubernetes and Prometheus"
   homepage "https://github.com/ppiankov/infranow"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/infranow/releases/download/v0.5.0/infranow_0.5.0_darwin_amd64.tar.gz"
-      sha256 "b316ce3c861ec7a6c50c32c7cffad7860bba99fd1b022188f4a3f1dd6ea3af7d"
+      url "https://github.com/ppiankov/infranow/releases/download/v0.6.0/infranow_0.6.0_darwin_amd64.tar.gz"
+      sha256 "06f17dfcf0fceb9834d193e16859baaee75c810c7216566c55bf1c7f18733540"
 
       define_method(:install) do
         bin.install "infranow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/infranow/releases/download/v0.5.0/infranow_0.5.0_darwin_arm64.tar.gz"
-      sha256 "b2587366afb5d56f0dc50c9eadf23801d4627c477c10884c0d15425efca6ca0a"
+      url "https://github.com/ppiankov/infranow/releases/download/v0.6.0/infranow_0.6.0_darwin_arm64.tar.gz"
+      sha256 "154c920fa4f77f1e3a57b231aa1103e416f393af0bbd66e68c10b3b184e99055"
 
       define_method(:install) do
         bin.install "infranow"
@@ -29,15 +29,15 @@ class Infranow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/infranow/releases/download/v0.5.0/infranow_0.5.0_linux_amd64.tar.gz"
-      sha256 "79aae0c2010e9902fac29914fdbf0ca73931e63eb47b2facf32ed06145e88a1a"
+      url "https://github.com/ppiankov/infranow/releases/download/v0.6.0/infranow_0.6.0_linux_amd64.tar.gz"
+      sha256 "a08b0abd94906e1024637697f2efc5092e2a0e207c76a4fcdb4b419c4efdb6f7"
       define_method(:install) do
         bin.install "infranow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/infranow/releases/download/v0.5.0/infranow_0.5.0_linux_arm64.tar.gz"
-      sha256 "1cf173ad455c27bf7b1048ddad712d42477c9844c39116b9c69c1296afd98393"
+      url "https://github.com/ppiankov/infranow/releases/download/v0.6.0/infranow_0.6.0_linux_arm64.tar.gz"
+      sha256 "d0785459549da88638ab04a8c5b3aeb58426ab87ff64b1d4a8b317660b1b11b0"
       define_method(:install) do
         bin.install "infranow"
       end
