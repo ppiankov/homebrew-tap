@@ -9,7 +9,11 @@ class Pastewatch < Formula
 
   on_macos do
     url "https://github.com/ppiankov/pastewatch/releases/download/v0.25.4/pastewatch-cli"
+<<<<<<< Updated upstream
     sha256 "681c6511b0b30b2c7d0b3cfbff797095263d295c5d03cb6dca967ee924201b76"
+=======
+    sha256 "81ece52f60424baa4d333eb21ebaa3d7487f9eb7e85c5caa2f54558db85fa675"
+>>>>>>> Stashed changes
   end
 
   on_linux do
