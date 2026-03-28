@@ -9,7 +9,7 @@ class Pastewatch < Formula
 
   on_macos do
     url "https://github.com/ppiankov/pastewatch/releases/download/v0.25.8/pastewatch-cli"
-    sha256 "faa5eb81637de9a6888f2002d5fa4c0e735f8e486263085d94c0e4bf46dfac93"
+    sha256 "c312823f38eaddb29fc589da73029a129693dba84c5821b4ecd379bc3607202e"
   end
 
   on_linux do
