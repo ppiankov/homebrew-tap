@@ -1,49 +1,34 @@
-# typed: false
-# frozen_string_literal: true
-
 class Mysqlpulse < Formula
-  desc "A heartbeat monitor for MySQL — Prometheus metrics exporter"
+  desc "MySQL observability CLI for humans and agents"
   homepage "https://github.com/ppiankov/mysqlpulse"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.0/mysqlpulse-darwin-amd64"
-      sha256 "3adc9396de42d084dfac603bd1bdd3da510929c94594b01c6bd161319574d7ba"
-
-      define_method(:install) do
-        bin.install "mysqlpulse-darwin-amd64" => "mysqlpulse"
-      end
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.0/mysqlpulse-darwin-arm64"
-      sha256 "1bb4ea0c044a1e933b74332176a68f93776f6572859a1e61055ebfb2b7a5899c"
-
-      define_method(:install) do
-        bin.install "mysqlpulse-darwin-arm64" => "mysqlpulse"
-      end
+      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.1/mysqlpulse-darwin-arm64"
+      sha256 "3b2f5f95c1bb5d8204bfe8257bbd7f5e48e53e4b2166ad4e75c6a482fb32fe00"
+    else
+      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.1/mysqlpulse-darwin-amd64"
+      sha256 "30b2b8e217726df4757857b04d2e39fac76d176412ba8dfc00337fad99d86e36"
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.0/mysqlpulse-linux-amd64"
-      sha256 "16ee0e2dc0ff5eafba86bee26a6ac5a8393038e93fda7a123b28234f56f6a21f"
-      define_method(:install) do
-        bin.install "mysqlpulse-linux-amd64" => "mysqlpulse"
-      end
-    end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.0/mysqlpulse-linux-arm64"
-      sha256 "d3d758a3bc6cc542d1eecb1eb1a4603edf51c3f470e8a9ba6372a8721d3b851b"
-      define_method(:install) do
-        bin.install "mysqlpulse-linux-arm64" => "mysqlpulse"
-      end
+    if Hardware::CPU.arm?
+      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.1/mysqlpulse-linux-arm64"
+      sha256 "a534918f9005d90bdc57eae06c8efb1e0a203b196820d58c7f3e9d27b46a394b"
+    else
+      url "https://github.com/ppiankov/mysqlpulse/releases/download/v0.1.1/mysqlpulse-linux-amd64"
+      sha256 "d4de473506ceab3b7abd977bd60f88500415434a8910db9ae46a4fe9e94477e3"
     end
   end
 
+  def install
+    bin.install Dir["mysqlpulse*"].first => "mysqlpulse"
+  end
+
   test do
-    system "#{bin}/mysqlpulse", "version"
+    assert_match version.to_s, shell_output("\#{bin}/mysqlpulse version")
   end
 end
