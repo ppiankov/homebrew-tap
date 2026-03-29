@@ -4,21 +4,21 @@
 class Clickpulse < Formula
   desc "A heartbeat monitor for ClickHouse — Prometheus metrics exporter"
   homepage "https://github.com/ppiankov/clickpulse"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.3/clickpulse_0.2.3_darwin_amd64.tar.gz"
-      sha256 "194944a9eea12dbd28aedf65a463cdf8fe83c95bc524e00ef1c4ba5583354bd8"
+      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.4/clickpulse_0.2.4_darwin_amd64.tar.gz"
+      sha256 "cb08e794dd323a343678a8d7917f46844967f91369120e44f038cf8e7672ff93"
 
       define_method(:install) do
         bin.install "clickpulse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.3/clickpulse_0.2.3_darwin_arm64.tar.gz"
-      sha256 "cc92de360c8e654f22f4b4b91cf3bb12997f0379d4e90ea26befae32fff00231"
+      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.4/clickpulse_0.2.4_darwin_arm64.tar.gz"
+      sha256 "6463ede02bbbd5e41171b3018a16372db0d26c261aa63970dc96d3ab3065632d"
 
       define_method(:install) do
         bin.install "clickpulse"
@@ -28,15 +28,15 @@ class Clickpulse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.3/clickpulse_0.2.3_linux_amd64.tar.gz"
-      sha256 "41811200e095da51d2e121123524efd2f758a0bb1cbd5898567aa9704b1ac12e"
+      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.4/clickpulse_0.2.4_linux_amd64.tar.gz"
+      sha256 "0301a0f051403938dfda66640dc0b532baa90da23c98322d4a18b18f0678166e"
       define_method(:install) do
         bin.install "clickpulse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.3/clickpulse_0.2.3_linux_arm64.tar.gz"
-      sha256 "5488d41c99a6126411506eae0a9b94e0d4963e88908fee1685b74c5228bc91d1"
+      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.4/clickpulse_0.2.4_linux_arm64.tar.gz"
+      sha256 "e05aa18d0e086a5a02258e955496e8cea583475caf0a5b40a166470c74865482"
       define_method(:install) do
         bin.install "clickpulse"
       end
