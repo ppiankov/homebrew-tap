@@ -5,21 +5,21 @@
 class Neurorouter < Formula
   desc "LLM proxy that cleans, protects, and stabilizes AI sessions before they hit the model"
   homepage "https://neurorouter.dev"
-  version "0.1.3"
+  version "0.1.4"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.3/neurorouter_0.1.3_darwin_amd64.tar.gz"
-      sha256 "01b6ab064e57436382da453a1c067d7ff96db62455414c469dcce058c6b4203e"
+      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.4/neurorouter_0.1.4_darwin_amd64.tar.gz"
+      sha256 "cd3ef19b337e0676e67befec6cd168fb12b1760dfa4edff7fe14d85af3d7f30e"
 
       define_method(:install) do
         bin.install "neurorouter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.3/neurorouter_0.1.3_darwin_arm64.tar.gz"
-      sha256 "542fb185f5bf0b88d8f46bf018c40b22ff996b13fda7542132deb5be8253c1f9"
+      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.4/neurorouter_0.1.4_darwin_arm64.tar.gz"
+      sha256 "f9d153ca44f8ef57e5586a32a49dc7aaea89d6f55f7f87bb0ff1dfda6d65f540"
 
       define_method(:install) do
         bin.install "neurorouter"
@@ -29,15 +29,15 @@ class Neurorouter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.3/neurorouter_0.1.3_linux_amd64.tar.gz"
-      sha256 "df2c5d9cd97f42114a3eff4edf1938a13b108041ee9e6b09374dd9dd4447c062"
+      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.4/neurorouter_0.1.4_linux_amd64.tar.gz"
+      sha256 "436b67fa392e258b6b55bdea3331e7f7d72c94517ce3a5f34d5d0907db9ca7d1"
       define_method(:install) do
         bin.install "neurorouter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.3/neurorouter_0.1.3_linux_arm64.tar.gz"
-      sha256 "068304c883f5d20279bc680ad96b0fa8e62d886ad6aa849d43a349dd1bea5132"
+      url "https://github.com/ppiankov/neurorouter/releases/download/v0.1.4/neurorouter_0.1.4_linux_arm64.tar.gz"
+      sha256 "baff27ada676c0d8fa77b9ed081df51abc277bb07f7a895b4c6e0740189e0679"
       define_method(:install) do
         bin.install "neurorouter"
       end
