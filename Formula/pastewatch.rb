@@ -17,6 +17,10 @@ class Pastewatch < Formula
       url "https://github.com/ppiankov/pastewatch/releases/download/v0.26.2/pastewatch-cli-linux-amd64"
       sha256 "39302188e9e06184c8aecf059a9103398dd508fcb43e7f53df7d922de15d6a6b"
     end
+    on_arm do
+      url "https://github.com/ppiankov/pastewatch/releases/download/v0.26.2/pastewatch-cli-linux-arm64"
+      sha256 "da7ef8988c381c84d10bc5d3218b157b167a7775424ddb11abb996e89f4fde06"
+    end
   end
 
   def install
