@@ -4,7 +4,7 @@
 class Clickpulse < Formula
   desc "A heartbeat monitor for ClickHouse — Prometheus metrics exporter"
   homepage "https://github.com/ppiankov/clickpulse"
-  version "0.2.4"
+  version "0.2.9"
   license "MIT"
 
   on_macos do
@@ -28,8 +28,8 @@ class Clickpulse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.4/clickpulse_0.2.4_linux_amd64.tar.gz"
-      sha256 "0301a0f051403938dfda66640dc0b532baa90da23c98322d4a18b18f0678166e"
+      url "https://github.com/ppiankov/clickpulse/releases/download/v0.2.9/clickpulse_0.2.9_linux_amd64.tar.gz"
+      sha256 "ee9cd27c499058a1b85de6390dc5349c55a67d65e556e1ab87d7c474af5df6c2"
       define_method(:install) do
         bin.install "clickpulse"
       end
