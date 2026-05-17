@@ -5,21 +5,21 @@
 class Vaultspectre < Formula
   desc "Vault secret usage auditor - find missing, unused, and stale secrets"
   homepage "https://github.com/ppiankov/vaultspectre"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.1/vaultspectre_0.6.1_darwin_amd64.tar.gz"
-      sha256 "402b3344e258e615eb68cee764075cf58b0657e9cb26b572a04829e36ff90ca8"
+      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.2/vaultspectre_0.6.2_darwin_amd64.tar.gz"
+      sha256 "62616e329877e63d9e626177a1a779dfb0f33050af5d39552ed4768bb47aad2d"
 
       define_method(:install) do
         bin.install "vaultspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.1/vaultspectre_0.6.1_darwin_arm64.tar.gz"
-      sha256 "e97a9e2bbb00ff17224a29492a44e3e0ce0f9445a479dee735c1ede043746adf"
+      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.2/vaultspectre_0.6.2_darwin_arm64.tar.gz"
+      sha256 "6c4cca31aa564484a0b1b98d9edd587fdfb821e8c430c5ae9bfbf3cf5c94639b"
 
       define_method(:install) do
         bin.install "vaultspectre"
@@ -29,15 +29,15 @@ class Vaultspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.1/vaultspectre_0.6.1_linux_amd64.tar.gz"
-      sha256 "511991f38ef071f3a371110ebafca51f51370da5a9b6bdb4a4fe9cb79f8ff81c"
+      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.2/vaultspectre_0.6.2_linux_amd64.tar.gz"
+      sha256 "d648f543a9994b706457146dfd16a0883f819db977c55e11f85c64a9416c6425"
       define_method(:install) do
         bin.install "vaultspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.1/vaultspectre_0.6.1_linux_arm64.tar.gz"
-      sha256 "763da768655bede9d7770bdd3a3469a587612629bc8bd98b8bf4cff122361ea1"
+      url "https://github.com/ppiankov/vaultspectre/releases/download/v0.6.2/vaultspectre_0.6.2_linux_arm64.tar.gz"
+      sha256 "ecc55715496325cd5436c74e3632e33aadd7b1a71a0279f50edaaf83a3db27fe"
       define_method(:install) do
         bin.install "vaultspectre"
       end
