@@ -5,48 +5,56 @@
 class Freeflow < Formula
   desc "CLI intelligence layer for Freeflow task-tracker"
   homepage "https://github.com/ppiankov/freeflow-dist"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.0/freeflow_darwin_amd64.tar.gz"
-      sha256 "0a187c885f48484dbdd61d7fab0480d3f949bae721ba700bf38792cee7bf7b91"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.1/freeflow_darwin_amd64.tar.gz"
+      sha256 "18a94a06a6ffbaf46f1a9e2f887af3c4275461131b1d7b0052bfed04083f5e53"
 
       define_method(:install) do
         bin.install "freeflow"
+        # WO-146: install SKILL.md once (Homebrew .install MOVES the file); symlink
+        # the doc copy so a second .install does not ENOENT on the consumed source.
         pkgshare.install "SKILL.md"
-        doc.install "SKILL.md"
+        doc.install_symlink pkgshare/"SKILL.md" => "SKILL.md"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.0/freeflow_darwin_arm64.tar.gz"
-      sha256 "d30816b5f33fc584079bf182ec38c669e392c3f73c935645308c5511d07d6322"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.1/freeflow_darwin_arm64.tar.gz"
+      sha256 "99303bb3d77c900ecc093d37353ad85ba52b542e104331ce633dae05bc02c171"
 
       define_method(:install) do
         bin.install "freeflow"
+        # WO-146: install SKILL.md once (Homebrew .install MOVES the file); symlink
+        # the doc copy so a second .install does not ENOENT on the consumed source.
         pkgshare.install "SKILL.md"
-        doc.install "SKILL.md"
+        doc.install_symlink pkgshare/"SKILL.md" => "SKILL.md"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.0/freeflow_linux_amd64.tar.gz"
-      sha256 "563ea26d695308296ee6657df5a4d8fed3dc3a2e6b5dac5b8976dd378b66148c"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.1/freeflow_linux_amd64.tar.gz"
+      sha256 "aba6e66360a2dd1b9c8de0ce57dcfe7e8e8d9c8762a08d250e5e56fba92c165a"
       define_method(:install) do
         bin.install "freeflow"
+        # WO-146: install SKILL.md once (Homebrew .install MOVES the file); symlink
+        # the doc copy so a second .install does not ENOENT on the consumed source.
         pkgshare.install "SKILL.md"
-        doc.install "SKILL.md"
+        doc.install_symlink pkgshare/"SKILL.md" => "SKILL.md"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.0/freeflow_linux_arm64.tar.gz"
-      sha256 "b7f2756643859a28061331e6ab75b3e4627347a73c1bc1f5951e28a82b894893"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.3.1/freeflow_linux_arm64.tar.gz"
+      sha256 "eaa430334bcb87e46f32a1e036cd1415a70a57fdbb86d6876374fbbbec101f16"
       define_method(:install) do
         bin.install "freeflow"
+        # WO-146: install SKILL.md once (Homebrew .install MOVES the file); symlink
+        # the doc copy so a second .install does not ENOENT on the consumed source.
         pkgshare.install "SKILL.md"
-        doc.install "SKILL.md"
+        doc.install_symlink pkgshare/"SKILL.md" => "SKILL.md"
       end
     end
   end
