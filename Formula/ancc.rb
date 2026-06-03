@@ -5,21 +5,21 @@
 class Ancc < Formula
   desc "Static validator for the Agent-Native CLI Convention"
   homepage "https://github.com/ppiankov/ancc"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.9.0/ancc-0.9.0-darwin-amd64.tar.gz"
-      sha256 "4cd7b0392f5302df247d99f1e9a3be869d7ea82ce4c946498747dc16189748eb"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.10.0/ancc-0.10.0-darwin-amd64.tar.gz"
+      sha256 "116b82e71978b22b0293fc3c51a23b61b5bf9d012406f39aa3ccfef42baf8f6d"
 
       define_method(:install) do
         bin.install "ancc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.9.0/ancc-0.9.0-darwin-arm64.tar.gz"
-      sha256 "2fe366e3d66bce73f2282c314b4af4b0b3714f86a69f5b58d04692e1bdcd6706"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.10.0/ancc-0.10.0-darwin-arm64.tar.gz"
+      sha256 "22f036cfcdb922e267c1a63a723069303b76285a53d94135ce4960b1577fe6be"
 
       define_method(:install) do
         bin.install "ancc"
@@ -29,15 +29,15 @@ class Ancc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.9.0/ancc-0.9.0-linux-amd64.tar.gz"
-      sha256 "e01817f7aeda68b36cac11dab8f695befbab9039872d8454ae4081ef3f7ec991"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.10.0/ancc-0.10.0-linux-amd64.tar.gz"
+      sha256 "f669144f2bd70d1819f5d44c4bb70f87572b9c2d88125604b6819d9d3bd787b8"
       define_method(:install) do
         bin.install "ancc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/ancc/releases/download/v0.9.0/ancc-0.9.0-linux-arm64.tar.gz"
-      sha256 "e72a1126acf2582b09a6239dec70884c596cc4f3f5ec482d4eca82a296529348"
+      url "https://github.com/ppiankov/ancc/releases/download/v0.10.0/ancc-0.10.0-linux-arm64.tar.gz"
+      sha256 "4ce7e0d06fc9767d8f030dfc1577079b950957dbbc92db18e1a8a682839b1eb8"
       define_method(:install) do
         bin.install "ancc"
       end
