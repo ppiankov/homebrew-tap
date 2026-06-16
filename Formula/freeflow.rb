@@ -5,12 +5,12 @@
 class Freeflow < Formula
   desc "CLI intelligence layer for Freeflow task-tracker"
   homepage "https://github.com/ppiankov/freeflow-dist"
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.0/freeflow_darwin_amd64.tar.gz"
-      sha256 "bab035e7097a1fa130779c9d5f06be46a0af9e8091cb9f53a64761a467b8b6ae"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.1/freeflow_darwin_amd64.tar.gz"
+      sha256 "82986d6c7a0a00ba37e7b7e9a749af80e2234297ad49e905a9346036ee517710"
 
       define_method(:install) do
         bin.install "freeflow"
@@ -21,8 +21,8 @@ class Freeflow < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.0/freeflow_darwin_arm64.tar.gz"
-      sha256 "43bc7e4b65230f568a5c5a4e7acf81425411debe38e101c081049a42de13a3ec"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.1/freeflow_darwin_arm64.tar.gz"
+      sha256 "aaae5c7bdd1551c32014eadc75a83a006ba59984562e833d03fbc33dbdaa12ef"
 
       define_method(:install) do
         bin.install "freeflow"
@@ -36,8 +36,8 @@ class Freeflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.0/freeflow_linux_amd64.tar.gz"
-      sha256 "b2a06db73a4fd8c53941df259655608ec28a194a118f214307947c0f07c9ea1a"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.1/freeflow_linux_amd64.tar.gz"
+      sha256 "d818fd49ccdb1bd510882f59f6d64e2e01bb9a7ab5d9343baef31643977e928a"
       define_method(:install) do
         bin.install "freeflow"
         # WO-146: install SKILL.md once (Homebrew .install MOVES the file); symlink
@@ -47,8 +47,8 @@ class Freeflow < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.0/freeflow_linux_arm64.tar.gz"
-      sha256 "85ff0dcec131a1ca883fb5bca2ea84bc3b47bfb882d036fc500cb8382f9f2df9"
+      url "https://github.com/ppiankov/freeflow-dist/releases/download/v0.4.1/freeflow_linux_arm64.tar.gz"
+      sha256 "610ae2d58ed2cc2415d1247b1c032247fe74377b2c0b03c133d11c566c6f1775"
       define_method(:install) do
         bin.install "freeflow"
         # WO-146: install SKILL.md once (Homebrew .install MOVES the file); symlink
