@@ -5,21 +5,21 @@
 class Wocontrol < Formula
   desc "WO spec crawler and execution pipeline"
   homepage "https://github.com/ppiankov/wocontrol"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/wocontrol/releases/download/v0.3.1/wocontrol_0.3.1_darwin_amd64.tar.gz"
-      sha256 "a2c1a23c649045193e90a8b0f8c747ceb6ad47e66d470feb2286b53aa6ed0fc4"
+      url "https://github.com/ppiankov/wocontrol/releases/download/v0.4.0/wocontrol_0.4.0_darwin_amd64.tar.gz"
+      sha256 "094e62ffb124dac1631a780d211aeba9bcb03f202b20319b8f8c92398f940716"
 
       define_method(:install) do
         bin.install "wocontrol"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/wocontrol/releases/download/v0.3.1/wocontrol_0.3.1_darwin_arm64.tar.gz"
-      sha256 "be4f248f46e7dd150170de3c63a5fd848ac0ae49a177d57f5c7a976cca93bb20"
+      url "https://github.com/ppiankov/wocontrol/releases/download/v0.4.0/wocontrol_0.4.0_darwin_arm64.tar.gz"
+      sha256 "f9b1e94cd9f1ec4f902158447045e2429acaba6f1ebf6645dc33f88503f1900d"
 
       define_method(:install) do
         bin.install "wocontrol"
@@ -29,15 +29,15 @@ class Wocontrol < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/wocontrol/releases/download/v0.3.1/wocontrol_0.3.1_linux_amd64.tar.gz"
-      sha256 "ae9cc88e8dbd27be06b6f2e1192fdece7b31fe502f4d5123d3c25fbf9f7dbb65"
+      url "https://github.com/ppiankov/wocontrol/releases/download/v0.4.0/wocontrol_0.4.0_linux_amd64.tar.gz"
+      sha256 "46279c09b76c252f80e1baf562f0758b848a1b7cf26e3fb63121db15738a415c"
       define_method(:install) do
         bin.install "wocontrol"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/wocontrol/releases/download/v0.3.1/wocontrol_0.3.1_linux_arm64.tar.gz"
-      sha256 "8c745383f87ded2a0624ab10d0859a20c31ea8005a22c719686c32dadfe08b2f"
+      url "https://github.com/ppiankov/wocontrol/releases/download/v0.4.0/wocontrol_0.4.0_linux_arm64.tar.gz"
+      sha256 "d7a8e0ac4a0651a57eaeac39fade720225dcf6a4fb93ba566bda8d08636606db"
       define_method(:install) do
         bin.install "wocontrol"
       end
