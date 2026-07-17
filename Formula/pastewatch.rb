@@ -9,17 +9,17 @@ class Pastewatch < Formula
 
   on_macos do
     url "https://github.com/ppiankov/pastewatch/releases/download/v0.31.0/pastewatch-cli"
-    sha256 "0547e6f9cb7906ddc13dd7a011b4346386e74f11ee76300c428f62b8411000ff"
+    sha256 "97236a81c3615011a68eb1c8223e4b692f78fad2719c64e30ee0eb6706f49de4"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/ppiankov/pastewatch/releases/download/v0.31.0/pastewatch-cli-linux-amd64"
-      sha256 "64e421df8c5e991982526bf643a86d13e006c3c46f6aa788c41d27a67e3b879b"
+      sha256 "577685ed2dbd061aef8e0a76f63c3c2c9bb7686a2a1a89bb1058f6457db9cdcd"
     end
     on_arm do
       url "https://github.com/ppiankov/pastewatch/releases/download/v0.31.0/pastewatch-cli-linux-arm64"
-      sha256 "3b292680c83bbc05493a3861ae3b02be4562fc054ad814fc1a66ea78b8e0bbba"
+      sha256 "bdee9d9c73e600abb821e14f0853995bbc4c3bd3d6f45fd9116d2b66a838840f"
     end
   end
 
