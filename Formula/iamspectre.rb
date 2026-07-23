@@ -11,7 +11,7 @@ class Iamspectre < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_darwin_amd64.tar.gz"
-      sha256 "9c544ea513dc9a71bddfae8e31b32549d5fdf5bb59b7aa936f311a9e948cd6ab"
+      sha256 "2808a6766c4b1d21fe549674a3c64abb7e70c0564dbb681ea4b86133b9dd9f17"
 
       def install
         bin.install "iamspectre"
@@ -19,7 +19,7 @@ class Iamspectre < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_darwin_arm64.tar.gz"
-      sha256 "ca178f7268b5c9b2f0b234500cc3b329f5d3eda69aabd23152bcb6702f652b1d"
+      sha256 "e8225a4e045bb7acb2214144858fbcad571559b0f0bcc7eda390d412c39abeea"
 
       def install
         bin.install "iamspectre"
@@ -30,14 +30,14 @@ class Iamspectre < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_linux_amd64.tar.gz"
-      sha256 "844a3b07a3c98959fb31f8a85323d3934d5ed6c3215966059b845f40bd37392d"
+      sha256 "ca881f9972143bac2134a8111114b283634287ec31b1101bcf9b911057c6d437"
       def install
         bin.install "iamspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_linux_arm64.tar.gz"
-      sha256 "6e767a3956dc9df7fb481a73e9396e9b964c05b4efffb0c995a7ee04cd9516f8"
+      sha256 "d780b1b2855ea1242f287124316b6b7543eab26786d13ed672a724f768c2446a"
       def install
         bin.install "iamspectre"
       end
