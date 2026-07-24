@@ -5,21 +5,21 @@
 class Iamspectre < Formula
   desc "Cross-cloud IAM auditor — finds unused, over-permissioned, and stale identities"
   homepage "https://github.com/ppiankov/iamspectre"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_darwin_amd64.tar.gz"
-      sha256 "2808a6766c4b1d21fe549674a3c64abb7e70c0564dbb681ea4b86133b9dd9f17"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.1/iamspectre_0.6.1_darwin_amd64.tar.gz"
+      sha256 "6be25fad217e42735ca8fb331e81bcd5c1b2b13b6d128955af1586c46c71437a"
 
       def install
         bin.install "iamspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_darwin_arm64.tar.gz"
-      sha256 "e8225a4e045bb7acb2214144858fbcad571559b0f0bcc7eda390d412c39abeea"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.1/iamspectre_0.6.1_darwin_arm64.tar.gz"
+      sha256 "774401a24f7387ea1bfbacd7c5068e2fa6000dc6d2c860d4d8a779003725e901"
 
       def install
         bin.install "iamspectre"
@@ -29,15 +29,15 @@ class Iamspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_linux_amd64.tar.gz"
-      sha256 "ca881f9972143bac2134a8111114b283634287ec31b1101bcf9b911057c6d437"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.1/iamspectre_0.6.1_linux_amd64.tar.gz"
+      sha256 "be28dae199f30c9e0e42dbccf262c1b7b9d1b58b7e87ca05a991f0a56beba794"
       def install
         bin.install "iamspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.0/iamspectre_0.6.0_linux_arm64.tar.gz"
-      sha256 "d780b1b2855ea1242f287124316b6b7543eab26786d13ed672a724f768c2446a"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.1/iamspectre_0.6.1_linux_arm64.tar.gz"
+      sha256 "38957592a977099785f863e6611c78f6b3ee3263401486d47b4c938f21d6568e"
       def install
         bin.install "iamspectre"
       end
