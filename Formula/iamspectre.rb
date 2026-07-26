@@ -1,28 +1,28 @@
 class Iamspectre < Formula
   desc "Cross-cloud IAM auditor — finds unused, over-permissioned, and stale identities"
   homepage "https://github.com/ppiankov/iamspectre"
-  version "0.6.2"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.2/iamspectre_0.6.2_darwin_arm64.tar.gz"
-      sha256 "052473dd6ac8694e1f69206de5a704cbe61d5960796148c72e47612414639c6e"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.7.0/iamspectre_0.7.0_darwin_arm64.tar.gz"
+      sha256 "615ae8492b1a677a5f685f89ecd549df860616e404f681950608cbf3a91eceab"
     end
     on_intel do
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.2/iamspectre_0.6.2_darwin_amd64.tar.gz"
-      sha256 "f63ee9b7bbbecad0e3cbac422003edcf5d9c427575f401b759fc406041fa56e5"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.7.0/iamspectre_0.7.0_darwin_amd64.tar.gz"
+      sha256 "a53e84b775caf91c61513b7945e9140fd1c315d069f9b01469f895c0e67d44d0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.2/iamspectre_0.6.2_linux_arm64.tar.gz"
-      sha256 "1eac08e32242edeadaffa5b19b182d6578b009ba5d54fb048c7d69974f8c69be"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.7.0/iamspectre_0.7.0_linux_arm64.tar.gz"
+      sha256 "8999c8fe9f851c108c9348493bd26efae295a209856efea430cb6a136b813358"
     end
     on_intel do
-      url "https://github.com/ppiankov/iamspectre/releases/download/v0.6.2/iamspectre_0.6.2_linux_amd64.tar.gz"
-      sha256 "8b768a02ad2f85d4e0e70bdfc26e12dd4919c82a709f2cdd2374491635bdc2e5"
+      url "https://github.com/ppiankov/iamspectre/releases/download/v0.7.0/iamspectre_0.7.0_linux_amd64.tar.gz"
+      sha256 "c4b7273c450dfabeea9b0425d53fd11a4c01cc4ba44be70b826ce6a2e4e0f4b3"
     end
   end
 
