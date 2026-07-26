@@ -5,21 +5,21 @@
 class S3spectre < Formula
   desc "AWS S3 bucket usage auditor — detects drift between code and live infrastructure"
   homepage "https://github.com/ppiankov/s3spectre"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/s3spectre/releases/download/v0.5.0/s3spectre_0.5.0_darwin_amd64.tar.gz"
-      sha256 "0bd2a46e7ddc9269dc0c73b15a32b985e70754b9c8ef4456191b38e913f80fc1"
+      url "https://github.com/ppiankov/s3spectre/releases/download/v0.6.0/s3spectre_0.6.0_darwin_amd64.tar.gz"
+      sha256 "383b28a64d105f67e4a26c090f7499debd56e9003e1db9669f4803a9f1324932"
 
       define_method(:install) do
         bin.install "s3spectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/s3spectre/releases/download/v0.5.0/s3spectre_0.5.0_darwin_arm64.tar.gz"
-      sha256 "9268a637e2e42deaf88f8f253ee0fa727e99c908a70b813ff4e1b4dea057c7b7"
+      url "https://github.com/ppiankov/s3spectre/releases/download/v0.6.0/s3spectre_0.6.0_darwin_arm64.tar.gz"
+      sha256 "fedd75536be1ef189e4a775e90cefb2d5d77841c52d5469d237958599702c54b"
 
       define_method(:install) do
         bin.install "s3spectre"
@@ -29,15 +29,15 @@ class S3spectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/s3spectre/releases/download/v0.5.0/s3spectre_0.5.0_linux_amd64.tar.gz"
-      sha256 "36072bebf11b06d1238a70cbf7ea8e1b7d30d0a6afd423d4b72ec81c70d5e355"
+      url "https://github.com/ppiankov/s3spectre/releases/download/v0.6.0/s3spectre_0.6.0_linux_amd64.tar.gz"
+      sha256 "badf6f7f4f52ccf7d3e503e8973054b85f4708689780ea03dec34b5f97a1baff"
       define_method(:install) do
         bin.install "s3spectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/s3spectre/releases/download/v0.5.0/s3spectre_0.5.0_linux_arm64.tar.gz"
-      sha256 "64ebc8dffe2474d6995ad845f92fe3a672423efbd4590182575079fd7d80862b"
+      url "https://github.com/ppiankov/s3spectre/releases/download/v0.6.0/s3spectre_0.6.0_linux_arm64.tar.gz"
+      sha256 "d8187b75abdf156eed16e215df70e5c22e77112ad29403f0c7b3c6868fd9c440"
       define_method(:install) do
         bin.install "s3spectre"
       end
