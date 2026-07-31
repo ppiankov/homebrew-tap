@@ -5,21 +5,21 @@
 class Kubespectre < Formula
   desc "Kubernetes security posture auditor"
   homepage "https://github.com/ppiankov/kubespectre"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/kubespectre/releases/download/v0.5.0/kubespectre_0.5.0_darwin_amd64.tar.gz"
-      sha256 "23eb944e088bc3294db7c43412cdbfc173cf430006e2201d12dd2f145ed253d9"
+      url "https://github.com/ppiankov/kubespectre/releases/download/v0.6.0/kubespectre_0.6.0_darwin_amd64.tar.gz"
+      sha256 "ebf248490b41fbb121f013738eff6114e5691350c546362df8bc6175c498474b"
 
       define_method(:install) do
         bin.install "kubespectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/kubespectre/releases/download/v0.5.0/kubespectre_0.5.0_darwin_arm64.tar.gz"
-      sha256 "3cece6a95c1abe4cf15cdcff3b6a8349ac2407eb20cbd64414894e314c611a35"
+      url "https://github.com/ppiankov/kubespectre/releases/download/v0.6.0/kubespectre_0.6.0_darwin_arm64.tar.gz"
+      sha256 "db31f96bea9935e3b27daced587f6aa276c236c35f357eb0c624ed7e2d6a98b7"
 
       define_method(:install) do
         bin.install "kubespectre"
@@ -29,15 +29,15 @@ class Kubespectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/kubespectre/releases/download/v0.5.0/kubespectre_0.5.0_linux_amd64.tar.gz"
-      sha256 "def5e6d63d5deb47127ff7f68e98fa7ea3bac1a5f418a13c8b3ad6cb15bdebcf"
+      url "https://github.com/ppiankov/kubespectre/releases/download/v0.6.0/kubespectre_0.6.0_linux_amd64.tar.gz"
+      sha256 "15b01216ece3699c2eb95ed51ab128d4e513b9a6654f9d1d2d254c36718696db"
       define_method(:install) do
         bin.install "kubespectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/kubespectre/releases/download/v0.5.0/kubespectre_0.5.0_linux_arm64.tar.gz"
-      sha256 "f10dd7a77f87e28c61866f31ebd35aca7d18b68a0c66d3d702f0635588af9f56"
+      url "https://github.com/ppiankov/kubespectre/releases/download/v0.6.0/kubespectre_0.6.0_linux_arm64.tar.gz"
+      sha256 "364a1ca4e925164e24ade3c7d609726671a08bd90781df03b10c3e2fb820545c"
       define_method(:install) do
         bin.install "kubespectre"
       end
