@@ -5,21 +5,21 @@
 class Rdsspectre < Formula
   desc "Database instance waste auditor — finds idle, oversized, and misconfigured instances in AWS RDS and GCP Cloud SQL"
   homepage "https://github.com/ppiankov/rdsspectre"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.1/rdsspectre_0.1.1_darwin_amd64.tar.gz"
-      sha256 "8121e55ceb95d16b4b762f450c1f56ef489dd6065ad0ca47f709c631f41afcfa"
+      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.2/rdsspectre_0.1.2_darwin_amd64.tar.gz"
+      sha256 "3e1f1922f980ee1de7d4472a616e8f6bdf7cabecdc165cc5d8df0e527ac7c1e9"
 
       define_method(:install) do
         bin.install "rdsspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.1/rdsspectre_0.1.1_darwin_arm64.tar.gz"
-      sha256 "15afadb4e583e9a8089117c942984054d8f56561a274c15523b6648cb6038786"
+      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.2/rdsspectre_0.1.2_darwin_arm64.tar.gz"
+      sha256 "f1019436f4544fd106563346a62d22263069c324ae75d47e4dc29c4652a963a1"
 
       define_method(:install) do
         bin.install "rdsspectre"
@@ -29,15 +29,15 @@ class Rdsspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.1/rdsspectre_0.1.1_linux_amd64.tar.gz"
-      sha256 "aef13feb85950f67d126660e6d61cd70513be04a68dcf1b7a3e26d15d91b8a24"
+      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.2/rdsspectre_0.1.2_linux_amd64.tar.gz"
+      sha256 "994c333d02caaae5c83a1906ee28806e3cc13a304e7a8dc5bb6651341bec58af"
       define_method(:install) do
         bin.install "rdsspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.1/rdsspectre_0.1.1_linux_arm64.tar.gz"
-      sha256 "3c3b40eae3d6baa49665608d8808e498a48fe961a72d29c06999a202f7676f90"
+      url "https://github.com/ppiankov/rdsspectre/releases/download/v0.1.2/rdsspectre_0.1.2_linux_arm64.tar.gz"
+      sha256 "04ae6c960d1a2ad196629a69b28fc106feaab858bec86f6e3d5f455c7990c1a9"
       define_method(:install) do
         bin.install "rdsspectre"
       end
