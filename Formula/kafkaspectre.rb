@@ -5,21 +5,21 @@
 class Kafkaspectre < Formula
   desc "Kafka cluster auditor — identifies unused, orphaned, and misconfigured topics"
   homepage "https://github.com/ppiankov/kafkaspectre"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.4/kafkaspectre_0.2.4_darwin_amd64.tar.gz"
-      sha256 "073f6b701403fb69f202c2920791660532b5871b7ea0c278544bc39c37e7354d"
+      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.5/kafkaspectre_0.2.5_darwin_amd64.tar.gz"
+      sha256 "2a620ddde33ecd7f1449e1fb1d5f8a695a4a27c6e124d1b2a8d7caba6e492313"
 
       define_method(:install) do
         bin.install "kafkaspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.4/kafkaspectre_0.2.4_darwin_arm64.tar.gz"
-      sha256 "840a6c219aa3b37e1e40d80bcf4f5c7bee53d9a8996c8aa6d4fc47dc08de80dd"
+      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.5/kafkaspectre_0.2.5_darwin_arm64.tar.gz"
+      sha256 "a18937e8fe9077865817d39f92b8e62bd44cccc5e8deeee34da9dfe965ac9c3d"
 
       define_method(:install) do
         bin.install "kafkaspectre"
@@ -29,15 +29,15 @@ class Kafkaspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.4/kafkaspectre_0.2.4_linux_amd64.tar.gz"
-      sha256 "ab1fae655f5d476e0c1146f9a148290e67a46e31be73c637a7f568b614095494"
+      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.5/kafkaspectre_0.2.5_linux_amd64.tar.gz"
+      sha256 "bb4721520e91f76ee8c2373e17beee39fd6e462e2c2a2c128e1f0629111757a9"
       define_method(:install) do
         bin.install "kafkaspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.4/kafkaspectre_0.2.4_linux_arm64.tar.gz"
-      sha256 "c49aa39607bbb51e6a231fd988766c936853853af0b39968870c9b73b8cfe69c"
+      url "https://github.com/ppiankov/kafkaspectre/releases/download/v0.2.5/kafkaspectre_0.2.5_linux_arm64.tar.gz"
+      sha256 "c99de474c00f69da876d16cbf6cf50cf38abfae0ac3d0040e77b958538c622c8"
       define_method(:install) do
         bin.install "kafkaspectre"
       end
