@@ -5,21 +5,21 @@
 class Ecrspectre < Formula
   desc "Container registry waste auditor — finds stale, untagged, and oversized images in AWS ECR and GCP Artifact Registry"
   homepage "https://github.com/ppiankov/ecrspectre"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.1.0/ecrspectre_0.1.0_darwin_amd64.tar.gz"
-      sha256 "33d15d00c642e330d70544133e3cd0ea06c1a1d3803dff2c75515ae2c649cfa2"
+      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.2.0/ecrspectre_0.2.0_darwin_amd64.tar.gz"
+      sha256 "465690d40690c51c450e155f4d4847dd1cde67c9da0b0f03a438ebb6bc1545f6"
 
       define_method(:install) do
         bin.install "ecrspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.1.0/ecrspectre_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c8ec1eb6905490e43813d479aa6cfcae2aaaaef619e1dd8526870b25f8ed412c"
+      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.2.0/ecrspectre_0.2.0_darwin_arm64.tar.gz"
+      sha256 "512bbafa18739b544326461a9be61253563c13e8bbfe45464642ccee2721b824"
 
       define_method(:install) do
         bin.install "ecrspectre"
@@ -29,15 +29,15 @@ class Ecrspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.1.0/ecrspectre_0.1.0_linux_amd64.tar.gz"
-      sha256 "d00049b0074f8e969d2c684fe9680262fae6c9a0b01aa79c19e22db334be047a"
+      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.2.0/ecrspectre_0.2.0_linux_amd64.tar.gz"
+      sha256 "5219b0e11d9deed253ab1ba79fd19ee827c9e0be5a89c64f8bb251e6d302b9cd"
       define_method(:install) do
         bin.install "ecrspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.1.0/ecrspectre_0.1.0_linux_arm64.tar.gz"
-      sha256 "a7456842cef09003e547d491eee44540e886cb14d695d40552d73854cf6789e1"
+      url "https://github.com/ppiankov/ecrspectre/releases/download/v0.2.0/ecrspectre_0.2.0_linux_arm64.tar.gz"
+      sha256 "b3c43536a14b0e8f2d002eb79dffaa83ec2a2bb408ae6ac69027153377fc443d"
       define_method(:install) do
         bin.install "ecrspectre"
       end
