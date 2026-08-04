@@ -5,21 +5,21 @@
 class Awsspectre < Formula
   desc "AWS resource waste auditor — finds idle, orphaned, and oversized resources"
   homepage "https://github.com/ppiankov/awsspectre"
-  version "0.15.0"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/awsspectre/releases/download/v0.15.0/awsspectre_0.15.0_darwin_amd64.tar.gz"
-      sha256 "4094a9a055b9b066861447d44fd5e60163e172c9d1e4075e99fded62a2630536"
+      url "https://github.com/ppiankov/awsspectre/releases/download/v0.16.0/awsspectre_0.16.0_darwin_amd64.tar.gz"
+      sha256 "e20224e56176989ef89cf7daff8c5a168057850c194a76bcd2d91a2dcc3daa18"
 
       define_method(:install) do
         bin.install "awsspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/awsspectre/releases/download/v0.15.0/awsspectre_0.15.0_darwin_arm64.tar.gz"
-      sha256 "c8cb7e3abcffb9c28f47fa9974d97bcc641ee7dda08ad64cd2c1c05d0cd8df4e"
+      url "https://github.com/ppiankov/awsspectre/releases/download/v0.16.0/awsspectre_0.16.0_darwin_arm64.tar.gz"
+      sha256 "35920dfb982cde842938ff498e4e03fa21125eb3cc66ab45270de3925ea77df6"
 
       define_method(:install) do
         bin.install "awsspectre"
@@ -29,15 +29,15 @@ class Awsspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/awsspectre/releases/download/v0.15.0/awsspectre_0.15.0_linux_amd64.tar.gz"
-      sha256 "32834360205893c15d152c231140cc040ff1d06ff74459021e4900e2551310de"
+      url "https://github.com/ppiankov/awsspectre/releases/download/v0.16.0/awsspectre_0.16.0_linux_amd64.tar.gz"
+      sha256 "e822112fc06eb6d0e58419df431a4849d7cf81e21fe83241ac36d28c740a7434"
       define_method(:install) do
         bin.install "awsspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/awsspectre/releases/download/v0.15.0/awsspectre_0.15.0_linux_arm64.tar.gz"
-      sha256 "2bef378b88595d77debaf0333dcdfe28947f908b1e6fd2a3d0f36babee68b24c"
+      url "https://github.com/ppiankov/awsspectre/releases/download/v0.16.0/awsspectre_0.16.0_linux_arm64.tar.gz"
+      sha256 "23aa9850c37f4ce72b69ac9d1e2a700a5fcb4a2ed3aafee046cb4eb3bdc79e84"
       define_method(:install) do
         bin.install "awsspectre"
       end
