@@ -5,21 +5,21 @@
 class Dnsspectre < Formula
   desc "DNS hygiene and subdomain takeover detection"
   homepage "https://github.com/ppiankov/dnsspectre"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.3.1/dnsspectre_0.3.1_darwin_amd64.tar.gz"
-      sha256 "67a0b1c9874910633e1d2bb21ff99978b55e72ff10d0ccb099803cb483f71b99"
+      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.4.0/dnsspectre_0.4.0_darwin_amd64.tar.gz"
+      sha256 "70e613b1e2fcb1d2f8f0190a8aee95f06f50ff3b22e0ee4c63b68f5e42763430"
 
       define_method(:install) do
         bin.install "dnsspectre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.3.1/dnsspectre_0.3.1_darwin_arm64.tar.gz"
-      sha256 "91e5c59b794476a482578ffc3a51d14acc35ab88d45fa80a1e0ae3b30d5c8196"
+      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.4.0/dnsspectre_0.4.0_darwin_arm64.tar.gz"
+      sha256 "4a570e892f4f00c9c878ce92a7f4aa07c5d94a157a2735996b1491ea310d6218"
 
       define_method(:install) do
         bin.install "dnsspectre"
@@ -29,15 +29,15 @@ class Dnsspectre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.3.1/dnsspectre_0.3.1_linux_amd64.tar.gz"
-      sha256 "ce19e2ffaf6135f9e4dc4294f08af990b322f48ad2d449565551d2c934a5b344"
+      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.4.0/dnsspectre_0.4.0_linux_amd64.tar.gz"
+      sha256 "a9a25a21cbdb9cdd864ba9ddb1d2db0fc8072b86482ea7a7c049720693dbfbaf"
       define_method(:install) do
         bin.install "dnsspectre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.3.1/dnsspectre_0.3.1_linux_arm64.tar.gz"
-      sha256 "06ca37c77eb9673a746fc282607b16fd2ba0e39cb40424a843a86af32d0e75a4"
+      url "https://github.com/ppiankov/dnsspectre/releases/download/v0.4.0/dnsspectre_0.4.0_linux_arm64.tar.gz"
+      sha256 "90fb56e8e1e274187ba079a56123ec27b07bb554cefde57f22d402338a632f90"
       define_method(:install) do
         bin.install "dnsspectre"
       end
