@@ -4,22 +4,22 @@
 class Pastewatch < Formula
   desc "Sensitive data scanner — deterministic detection and obfuscation for text content"
   homepage "https://github.com/ppiankov/pastewatch"
-  version "0.37.2"
+  version "0.38.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/ppiankov/pastewatch/releases/download/v0.37.2/pastewatch-cli"
-    sha256 "9d793c740af5489cde471d9d01a265a6b44c9cf712d161981b514511dcb48658"
+    url "https://github.com/ppiankov/pastewatch/releases/download/v0.38.0/pastewatch-cli"
+    sha256 "1412ad4cf31558807113dc8f99dd2e2d8d3a6c203ea8b277500a17ed451b6263"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ppiankov/pastewatch/releases/download/v0.37.2/pastewatch-cli-linux-amd64"
-      sha256 "cac4f122e0a7e958c0a9b305ab971a96fac9ccee7cf8f53c7d3219f4d3f3c75b"
+      url "https://github.com/ppiankov/pastewatch/releases/download/v0.38.0/pastewatch-cli-linux-amd64"
+      sha256 "9cc8981b6dbe17ac81c15b2702e24ac82517c672cbc31ddf1f7a8a3eaea301b9"
     end
     on_arm do
-      url "https://github.com/ppiankov/pastewatch/releases/download/v0.37.2/pastewatch-cli-linux-arm64"
-      sha256 "30d716b5357ce8191255ee936553a966fc78387798fddf5d271828e8657860d4"
+      url "https://github.com/ppiankov/pastewatch/releases/download/v0.38.0/pastewatch-cli-linux-arm64"
+      sha256 "1922d77d23ece47ed90c7623d16d4d4306536e27fa97b5e2cdbb66593f1836bb"
     end
   end
 
